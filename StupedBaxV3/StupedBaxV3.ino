@@ -4,13 +4,16 @@
 volatile const int wakePin = 2;                 // pin used for waking up
 volatile const int LEDPin = 13;
 volatile const int servoPin = 9;
+volatile const int servoLidPin = 10;
 volatile const int mosfetPin = 6;
 
 volatile int isActive;
 volatile int pos = 0;
+volatile int lidPos = 0;
 
 //Create servo
 Servo myservo;
+Servo myLidservo;
 
 void setup()
 {
@@ -20,6 +23,9 @@ void setup()
 
   myservo.attach(servoPin);
   myservo.write(0);
+
+  myLidservo.attach(servoLidPin);
+  myLidservo.write(180);
 
   Serial.begin(9600);
 
@@ -102,6 +108,7 @@ void loop()
 
 void run1() {
 
+  openLid(180,50);
   forward(50, 0);
   forward(150, 75);
   hold(2000);
@@ -109,6 +116,7 @@ void run1() {
   forward(174, 0);
 
   while (isActive) {}
+  closeLid(0,0);
 }
 
 void run2() {
@@ -124,6 +132,21 @@ void run3() {
 
 
 
+void openLid(int newPos, int speed) {
+  for (unsigned int i = lidPos; i < newPos && isActive == 1; i += 2) {
+    lidPos += 2;
+    myLidservo.write(i);
+    delay(speed);
+  }
+}
+
+void closeLid(int newPos, int speed) {
+  for (unsigned int i = lidPos; i < newPos; i += 2) {
+    lidPos += 2;
+    myLidservo.write(i);
+    delay(speed);
+  }
+}
 
 
 void forward(int newPos, int speed) {
