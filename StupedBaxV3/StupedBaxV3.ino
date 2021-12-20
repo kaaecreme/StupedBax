@@ -34,6 +34,7 @@ void setup()
     isActive = 1;
     attachInterrupt(0, setSleep, LOW);
   } else {
+    isActive = 0;
     sleepNow(); // If switch is off go to sleep
   }
 
@@ -74,28 +75,28 @@ void loop()
     digitalWrite(LEDPin, HIGH);
     digitalWrite(mosfetPin, HIGH);
 
-    switch (random(1, 3 + 1)) {
 
-      case 1:
-        run1();
-        break;
+    //    switch (random(1, 3 + 1)) {
+    //
+    //      case 1:
+    //        run1();
+    //        break;
+    //
+    //      case 2:
+    //        run2();
+    //        break;
+    //
+    //      case 3:
+    //        run3();
+    //        break;
+    //
+    //
+    //      default:
+    //        break;
+    //
+    //    }
 
-      case 2:
-        run2();
-        break;
-
-      case 3:
-        run3();
-        break;
-
-
-      default:
-        break;
-
-    }
-
-    myservo.write(0);
-    pos = 0;
+    run1();
     Serial.println("SLEEP");
     delay(500);
     sleepNow();
@@ -108,20 +109,24 @@ void loop()
 
 void run1() {
 
-  openLid(180,50);
+  openLid(170, 30);
   forward(50, 0);
-  forward(150, 75);
+  forward(150, 30);
   hold(2000);
-  back(50, 45);
+  back(50, 30);
   forward(174, 0);
 
   while (isActive) {}
-  closeLid(0,0);
+  backEnd(0, 20);
+  closeLid(0, 20);
 }
 
 void run2() {
+  openLid(180, 0);
   forward(174, 0);
   while (isActive) {}
+  backEnd(0,10);
+  closeLid(0,10);
 }
 
 void run3() {
@@ -138,14 +143,16 @@ void openLid(int newPos, int speed) {
     myLidservo.write(i);
     delay(speed);
   }
+  lidPos = newPos;
 }
 
 void closeLid(int newPos, int speed) {
-  for (unsigned int i = lidPos; i < newPos; i += 2) {
-    lidPos += 2;
+  for (unsigned int i = lidPos; i > newPos; i -= 2) {
+    lidPos -= 2;
     myLidservo.write(i);
     delay(speed);
   }
+  lidPos = newPos;
 }
 
 
@@ -165,6 +172,15 @@ void back(int newPos, int delayTime) {
     delay(delayTime);
   }
 
+}
+
+void backEnd(int newPos, int delayTime) {
+  for (unsigned int i = pos; i > newPos; i -= 2) {
+    pos -= 2;
+    myservo.write(pos);
+    delay(delayTime);
+  }
+  pos = newPos;
 }
 
 void hold(int ms) {
