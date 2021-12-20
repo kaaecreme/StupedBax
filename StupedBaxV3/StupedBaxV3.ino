@@ -20,13 +20,17 @@ void setup()
   pinMode(wakePin, INPUT_PULLUP);
   pinMode(LEDPin, OUTPUT);
   pinMode(mosfetPin, OUTPUT);
-
+  
+/////////////////////////////////
+  digitalWrite(mosfetPin, HIGH);
   myservo.attach(servoPin);
   myservo.write(0);
 
   myLidservo.attach(servoLidPin);
-  myLidservo.write(180);
-
+  myLidservo.write(0);
+  delay(1000);
+  digitalWrite(mosfetPin, LOW);
+/////////////////////////////////
   Serial.begin(9600);
 
   // Check init values to ensure correct sleep
@@ -109,8 +113,7 @@ void loop()
 
 void run1() {
 
-  openLid(170, 30);
-  forward(50, 0);
+  openLid(170, 30); 
   forward(150, 30);
   hold(2000);
   back(50, 30);
@@ -143,7 +146,7 @@ void openLid(int newPos, int speed) {
     myLidservo.write(i);
     delay(speed);
   }
-  lidPos = newPos;
+   
 }
 
 void closeLid(int newPos, int speed) {
@@ -151,8 +154,7 @@ void closeLid(int newPos, int speed) {
     lidPos -= 2;
     myLidservo.write(i);
     delay(speed);
-  }
-  lidPos = newPos;
+  } 
 }
 
 
