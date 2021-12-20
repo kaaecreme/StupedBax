@@ -26,7 +26,7 @@ void setup()
   // Check init values to ensure correct sleep
   if (digitalRead(0) == LOW) { // If switch is turned on enable sleep interrupt
     isActive = 1;
-    attachInterrupt(0, wakeUpNow, LOW);
+    attachInterrupt(0, setSleep, LOW);
   } else {
     sleepNow(); // If switch is off go to sleep
   }
