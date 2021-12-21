@@ -20,17 +20,17 @@ void setup()
   pinMode(wakePin, INPUT_PULLUP);
   pinMode(LEDPin, OUTPUT);
   pinMode(mosfetPin, OUTPUT);
-  
-/////////////////////////////////
-  digitalWrite(mosfetPin, HIGH);
+
+  /////////////////////////////////
+  digitalWrite(mosfetPin, LOW);
   myservo.attach(servoPin);
   myservo.write(0);
 
   myLidservo.attach(servoLidPin);
   myLidservo.write(0);
   delay(1000);
-  digitalWrite(mosfetPin, LOW);
-/////////////////////////////////
+  digitalWrite(mosfetPin, HIGH);
+  /////////////////////////////////
   Serial.begin(9600);
 
   // Check init values to ensure correct sleep
@@ -58,7 +58,7 @@ void sleepNow()
 {
   isActive = 0;
   digitalWrite(LEDPin, LOW);
-  digitalWrite(mosfetPin, LOW);
+  digitalWrite(mosfetPin, HIGH);
 
 
   set_sleep_mode(SLEEP_MODE_PWR_DOWN);
@@ -77,30 +77,25 @@ void loop()
   if ((digitalRead(2) == LOW) && (isActive == 1)) {
     Serial.println("Awake");
     digitalWrite(LEDPin, HIGH);
-    digitalWrite(mosfetPin, HIGH);
+    digitalWrite(mosfetPin, LOW);
 
 
-    //    switch (random(1, 3 + 1)) {
-    //
-    //      case 1:
-    //        run1();
-    //        break;
-    //
-    //      case 2:
-    //        run2();
-    //        break;
-    //
-    //      case 3:
-    //        run3();
-    //        break;
-    //
-    //
-    //      default:
-    //        break;
-    //
-    //    }
+    switch (random(1, 3 + 1)) {
 
-    run1();
+      case 1:
+        run1();
+        break;
+
+      case 2:
+        run2();
+        break;
+
+
+      default:
+        break;
+
+    }
+ 
     Serial.println("SLEEP");
     delay(500);
     sleepNow();
@@ -113,7 +108,7 @@ void loop()
 
 void run1() {
 
-  openLid(170, 30); 
+  openLid(170, 30);
   forward(150, 30);
   hold(2000);
   back(50, 30);
@@ -125,18 +120,14 @@ void run1() {
 }
 
 void run2() {
-  openLid(180, 0);
+  openLid(180, 10);
   forward(174, 0);
+
   while (isActive) {}
-  backEnd(0,10);
-  closeLid(0,10);
+  backEnd(0, 10); 
+  closeLid(0, 10);
 }
 
-void run3() {
-  hold(3000);
-  forward(174, 0);
-  while (isActive) {}
-}
 
 
 
@@ -146,7 +137,7 @@ void openLid(int newPos, int speed) {
     myLidservo.write(i);
     delay(speed);
   }
-   
+
 }
 
 void closeLid(int newPos, int speed) {
@@ -154,7 +145,7 @@ void closeLid(int newPos, int speed) {
     lidPos -= 2;
     myLidservo.write(i);
     delay(speed);
-  } 
+  }
 }
 
 
