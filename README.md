@@ -4,9 +4,9 @@
 <!-- ABOUT THE PROJECT -->
 ## Schematics
 ### Breadboard
-![Alt text](/Schematics/StupedBax_circuit.png?raw=true "Optional Title")
+![Breadboard Circuit](/Schematics/StupedBax_circuit.png?raw=true "Optional Title")
 ### Upload from Arduino Nano to Mega328
-![Alt text](/Schematics/Upload_circuit.png?raw=true "Optional Title")
+![Upload Curcuit](/Schematics/Upload_circuit.png?raw=true "Optional Title")
 
 ### Built With
 
