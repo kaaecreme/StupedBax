@@ -2,10 +2,10 @@
 #include <Servo.h>
 
 volatile const int wakePin = 2;                 // pin used for waking up
-volatile const int LEDPin = 13;
+volatile const int LEDPin = 7;
 volatile const int servoPin = 9;
-volatile const int servoLidPin = 10;
-volatile const int mosfetPin = 6;
+volatile const int servoLidPin = 8;
+volatile const int mosfetPin = 10;
 
 volatile int isActive;
 volatile int pos = 0;
@@ -15,8 +15,9 @@ volatile int lidPos = 0;
 Servo myservo;
 Servo myLidservo;
 
-void setup()
-{
+///////////////////////////////////////////////////////////////////////////////////
+void setup() {
+  // put your setup code here, to run once:
   pinMode(wakePin, INPUT_PULLUP);
   pinMode(LEDPin, OUTPUT);
   pinMode(mosfetPin, OUTPUT);
@@ -31,12 +32,11 @@ void setup()
   delay(1000);
   digitalWrite(mosfetPin, HIGH);
   /////////////////////////////////
-  Serial.begin(9600);
 
   // Check init values to ensure correct sleep
-  if (digitalRead(0) == LOW) { // If switch is turned on enable sleep interrupt
+  if (digitalRead(wakePin) == LOW) { // If switch is turned on enable sleep interrupt
     isActive = 1;
-    attachInterrupt(0, setSleep, LOW);
+    attachInterrupt(0, setSleep, HIGH);
   } else {
     isActive = 0;
     sleepNow(); // If switch is off go to sleep
@@ -44,38 +44,9 @@ void setup()
 
 }
 
-void setSleep() { // Here goes the interrupt when going to sleep
-  isActive = 0;
-}
-
-
-void wakeUpNow() // Here goes the interrupt when getting awake
-{
-  isActive = 1;
-}
-
-void sleepNow()
-{
-  isActive = 0;
-  digitalWrite(LEDPin, LOW);
-  digitalWrite(mosfetPin, HIGH);
-
-
-  set_sleep_mode(SLEEP_MODE_PWR_DOWN);
-  sleep_enable();
-  detachInterrupt(0); // Remove the sleep interrupt
-  attachInterrupt(0, wakeUpNow, LOW); // Add wakeUp interrupt
-  sleep_mode();   // SLEEP
-
-  sleep_disable();         // WAKE UP.
-  detachInterrupt(0);
-  attachInterrupt(0, setSleep, HIGH); // Enable sleep interrupt
-}
-
-void loop()
-{
-  if ((digitalRead(2) == LOW) && (isActive == 1)) {
-    Serial.println("Awake");
+///////////////////////////////////////////////////////////////////////////////////
+void loop() {
+  if ((digitalRead(wakePin) == LOW) && (isActive == 1)) {
     digitalWrite(LEDPin, HIGH);
     digitalWrite(mosfetPin, LOW);
 
@@ -95,17 +66,48 @@ void loop()
         break;
 
     }
- 
-    Serial.println("SLEEP");
+
     delay(500);
     sleepNow();
 
+  } else {
+    sleepNow();
   }
 
 }
 
+///////////////////////////////////////////////////////////////////////////////////
+
+void sleepNow()
+{
+  digitalWrite(LEDPin, LOW);
+  digitalWrite(mosfetPin, HIGH);
+
+  sleep_enable();
+  detachInterrupt(0); // Remove the sleep interrupt
+  attachInterrupt(0, wakeUpNow, LOW); // Add wakeUp interrupt
+  set_sleep_mode(SLEEP_MODE_PWR_DOWN);
+  sleep_cpu();//activating sleep mode   
+
+}
+
+///////////////////////////////////////////////////////////////////////////////////
+void setSleep() { // Here goes the interrupt when going to sleep
+  isActive = 0;
+}
 
 
+void wakeUpNow() // Here goes the interrupt when getting awake
+{
+  sleep_disable(); //Disable sleep mode.
+  detachInterrupt(0); //Remove interrupt from pin2
+  attachInterrupt(0, setSleep, HIGH); // Enable sleep interrupt
+  isActive = 1;
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////////
 void run1() {
 
   openLid(170, 30);
