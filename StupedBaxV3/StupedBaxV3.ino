@@ -4,8 +4,8 @@
 volatile const int wakePin = 2;                 // pin used for waking up
 volatile const int LEDPin = 7;
 volatile const int servoPin = 9;
-volatile const int servoLidPin = 8;
-volatile const int mosfetPin = 10;
+volatile const int servoLidPin = 10;
+volatile const int mosfetPin = 8;
 
 volatile int isActive;
 volatile int pos = 0;
