@@ -16,6 +16,7 @@ In the future I'd like to add a motion sensor for extra fun :-)
 * 1x Switch button
 * 1x IRF9Z34 MOSFET P-channel
 * 1x 10k resistor
+* 1x 100 resistor
 * Jump wires
 
 ## Schematics
