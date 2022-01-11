@@ -21,7 +21,7 @@ In the future I'd like to add a motion sensor for extra fun :-)
 
 ## Schematics
 ### Breadboard
-<img src="https://github.com/kaaecreme/StupedBax/blob/main/Schematics/StupedBax_circuit.png" width="650">
+<img src="https://github.com/kaaecreme/StupedBax/blob/main/Schematics/StupedBax_circuit.png" width="600">
 
 ### Upload from Arduino Nano to Mega328
 <img src="https://github.com/kaaecreme/StupedBax/blob/main/Schematics/Upload_circuit.png" width="650">
