@@ -1,22 +1,18 @@
 # StupedBax
 <br />
 
-<!-- ABOUT THE PROJECT -->
-I built a completely useless box.
-
-It's purpose is nothing but switching off a button.
-
-Programmed by using interrupts in the Arduino IDE. 
-
-In the future I'd like to add a motion sensor for extra fun :-)
+<!-- ABOUT THE PROJECT --> 
 
 ### Built With
 * Atmega328 (Programmed with Arduino Nano)
-* 2x SG90 Servo
+* 1x SG90 Servo
+* 1x MG90S Servo (with greather torque than SG90 - aprox 2.2kg/cm at 6V)
 * 1x Switch button
 * 1x IRF9Z34 MOSFET P-channel
-* 1x 10k resistor
-* 1x 100 resistor
+* 1x 1N5819 Diode
+* 2x 10k resistor
+* 1x 220 resistor
+* 1x 6V power supply
 * Jump wires
 
 ## Schematics
