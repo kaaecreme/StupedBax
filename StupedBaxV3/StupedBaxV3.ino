@@ -9,7 +9,7 @@ volatile const int mosfetPin = 8;
 
 volatile int isActive;
 volatile int pos = 0;
-volatile int lidPos = 0;
+volatile int lidPos = 110;
 
 //Create servo
 Servo myservo;
@@ -28,7 +28,7 @@ void setup() {
   myservo.write(0);
 
   myLidservo.attach(servoLidPin);
-  myLidservo.write(0);
+  myLidservo.write(lidPos);
   delay(1000);
   digitalWrite(mosfetPin, HIGH);
   /////////////////////////////////
@@ -49,9 +49,8 @@ void loop() {
   if ((digitalRead(wakePin) == LOW) && (isActive == 1)) {
     digitalWrite(LEDPin, HIGH);
     digitalWrite(mosfetPin, LOW);
-
-
-    switch (random(1, 3 + 1)) {
+ 
+    switch (random(1, 2+1)) {
 
       case 1:
         run1();
@@ -110,7 +109,7 @@ void wakeUpNow() // Here goes the interrupt when getting awake
 ///////////////////////////////////////////////////////////////////////////////////
 void run1() {
 
-  openLid(170, 30);
+  openLid(10, 30);
   forward(150, 30);
   hold(2000);
   back(50, 30);
@@ -118,24 +117,25 @@ void run1() {
 
   while (isActive) {}
   backEnd(0, 20);
-  closeLid(0, 20);
+  closeLid(110, 20);
 }
 
 void run2() {
-  openLid(180, 10);
+  openLid(10, 10);
   forward(174, 0);
 
   while (isActive) {}
   backEnd(0, 10); 
-  closeLid(0, 10);
+  closeLid(110, 10);
 }
 
 
 
-
+// Full open = 0 / 10
+// Down = approx 110
 void openLid(int newPos, int speed) {
-  for (unsigned int i = lidPos; i < newPos && isActive == 1; i += 2) {
-    lidPos += 2;
+  for (unsigned int i = lidPos; i > newPos && isActive == 1; i -= 2) {
+    lidPos -= 2;
     myLidservo.write(i);
     delay(speed);
   }
@@ -143,8 +143,8 @@ void openLid(int newPos, int speed) {
 }
 
 void closeLid(int newPos, int speed) {
-  for (unsigned int i = lidPos; i > newPos; i -= 2) {
-    lidPos -= 2;
+  for (unsigned int i = lidPos; i < newPos; i += 2) {
+    lidPos += 2;
     myLidservo.write(i);
     delay(speed);
   }
