@@ -11,6 +11,14 @@ volatile int isActive;
 volatile int pos = 0;
 volatile int lidPos = 110;
 
+//Arm
+// Hit = 145
+// Close = 0
+
+//Lid
+// Open = 0 / 10
+// Closed = approx 110
+ 
 //Create servo
 Servo myservo;
 Servo myLidservo;
@@ -50,7 +58,7 @@ void loop() {
     digitalWrite(LEDPin, HIGH);
     digitalWrite(mosfetPin, LOW);
  
-    switch (random(1, 2+1)) {
+    switch (random(1, 4+1)) {
 
       case 1:
         run1();
@@ -60,6 +68,13 @@ void loop() {
         run2();
         break;
 
+     case 3:
+        run3();
+        break;
+
+     case 4:
+        run4();
+        break;
 
       default:
         break;
@@ -107,32 +122,59 @@ void wakeUpNow() // Here goes the interrupt when getting awake
 
 
 ///////////////////////////////////////////////////////////////////////////////////
+// Tease
 void run1() {
-
   openLid(10, 30);
-  forward(150, 30);
+  forward(134, 30);
   hold(2000);
   back(50, 30);
-  forward(174, 0);
+  forward(145, 0);
 
   while (isActive) {}
   backEnd(0, 20);
   closeLid(110, 20);
 }
-
+ 
+//Quick
 void run2() {
   openLid(10, 10);
-  forward(174, 0);
+  forward(145, 1);
 
   while (isActive) {}
   backEnd(0, 10); 
   closeLid(110, 10);
 }
 
+//Really quick
+void run3() { 
+  openLid(10, 5);
+  forward(145, 0);
+
+  while (isActive) {}
+  backEnd(0, 10);  
+  closeLid(110, 1);
+}
+
+//Funny
+void run4() { 
+  openLid(10, 5);
+  closeLid(110,5);
+  openLid(10, 5);
+  closeLid(110,5);
+  openLid(10, 5);
+  closeLid(110,5); 
+  hold(3000);
+
+  openLid(10, 5);
+  forward(145, 1);
+  
+  while (isActive) {}
+  backEnd(0, 10);  
+  closeLid(110, 10);
+}
 
 
-// Full open = 0 / 10
-// Down = approx 110
+
 void openLid(int newPos, int speed) {
   for (unsigned int i = lidPos; i > newPos && isActive == 1; i -= 2) {
     lidPos -= 2;
