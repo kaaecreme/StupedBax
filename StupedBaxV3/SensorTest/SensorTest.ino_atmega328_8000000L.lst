@@ -1,0 +1,1569 @@
+
+C:\Users\Thomas\AppData\Local\Temp\arduino_build_799110/SensorTest.ino.elf:     file format elf32-avr
+
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+__vectors():
+   0:	0c 94 66 00 	jmp	0xcc	; 0xcc <__ctors_end>
+   4:	0c 94 42 02 	jmp	0x484	; 0x484 <__vector_1>
+   8:	0c 94 69 02 	jmp	0x4d2	; 0x4d2 <__vector_2>
+   c:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+  10:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+  14:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+  18:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+  1c:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+  20:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+  24:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+  28:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+  2c:	0c 94 54 01 	jmp	0x2a8	; 0x2a8 <__vector_11>
+  30:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+  34:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+  38:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+  3c:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+  40:	0c 94 5c 03 	jmp	0x6b8	; 0x6b8 <__vector_16>
+  44:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+  48:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+  4c:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+  50:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+  54:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+  58:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+  5c:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+  60:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+  64:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+
+00000068 <__trampolines_end>:
+__trampolines_start():
+  68:	00 00       	nop
+  6a:	00 09       	sbc	r16, r0
+  6c:	00 03       	mulsu	r16, r16
+  6e:	02 00       	.word	0x0002	; ????
+  70:	00 04       	cpc	r0, r0
+  72:	05 08       	sbc	r0, r5
+	...
+
+0000007f <digital_pin_to_bit_mask_PGM>:
+  7f:	01 02 04 08 10 20 40 80 01 02 04 08 10 20 01 02     ..... @...... ..
+  8f:	04 08 10 20 40 80 40                                ... @.@
+
+00000096 <digital_pin_to_port_PGM>:
+  96:	04 04 04 04 04 04 04 04 02 02 02 02 02 02 03 03     ................
+  a6:	03 03 03 03 02 02 03                                .......
+
+000000ad <port_to_input_PGM>:
+  ad:	00 00 00 00 23 00 26 00 29 00                       ....#.&.).
+
+000000b7 <port_to_output_PGM>:
+  b7:	00 00 00 00 25 00 28 00 2b 00                       ....%.(.+.
+
+000000c1 <port_to_mode_PGM>:
+  c1:	00 00 00 00 24 00 27 00 2a 00 00                    ....$.'.*..
+
+000000cc <__ctors_end>:
+__dtors_end():
+  cc:	11 24       	eor	r1, r1
+  ce:	1f be       	out	0x3f, r1	; 63
+  d0:	cf ef       	ldi	r28, 0xFF	; 255
+  d2:	d8 e0       	ldi	r29, 0x08	; 8
+  d4:	de bf       	out	0x3e, r29	; 62
+  d6:	cd bf       	out	0x3d, r28	; 61
+
+000000d8 <__do_copy_data>:
+__do_copy_data():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2409
+  d8:	11 e0       	ldi	r17, 0x01	; 1
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2410
+  da:	a0 e0       	ldi	r26, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2411
+  dc:	b1 e0       	ldi	r27, 0x01	; 1
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2412
+  de:	e0 ea       	ldi	r30, 0xA0	; 160
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2413
+  e0:	f7 e0       	ldi	r31, 0x07	; 7
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2414
+  e2:	02 c0       	rjmp	.+4      	; 0xe8 <__do_copy_data+0x10>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2417
+  e4:	05 90       	lpm	r0, Z+
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2422
+  e6:	0d 92       	st	X+, r0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2424
+  e8:	a8 30       	cpi	r26, 0x08	; 8
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2425
+  ea:	b1 07       	cpc	r27, r17
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2426
+  ec:	d9 f7       	brne	.-10     	; 0xe4 <__do_copy_data+0xc>
+
+000000ee <__do_clear_bss>:
+__do_clear_bss():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2441
+  ee:	21 e0       	ldi	r18, 0x01	; 1
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2442
+  f0:	a8 e0       	ldi	r26, 0x08	; 8
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2443
+  f2:	b1 e0       	ldi	r27, 0x01	; 1
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2444
+  f4:	01 c0       	rjmp	.+2      	; 0xf8 <.do_clear_bss_start>
+
+000000f6 <.do_clear_bss_loop>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2446
+  f6:	1d 92       	st	X+, r1
+
+000000f8 <.do_clear_bss_start>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2448
+  f8:	a8 33       	cpi	r26, 0x38	; 56
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2449
+  fa:	b2 07       	cpc	r27, r18
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2450
+  fc:	e1 f7       	brne	.-8      	; 0xf6 <.do_clear_bss_loop>
+.do_clear_bss_start():
+  fe:	0e 94 4d 03 	call	0x69a	; 0x69a <main>
+ 102:	0c 94 ce 03 	jmp	0x79c	; 0x79c <_exit>
+
+00000106 <__bad_interrupt>:
+__vector_22():
+ 106:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+0000010a <lidSleep()>:
+_Z8lidSleepv():
+C:\Users\Thomas\Documents\GitHub\StupedBax\StupedBaxV3\SensorTest/SensorTest.ino:38
+  }
+      
+}
+
+void lidSleep() {
+  lidActive = false;
+ 10a:	10 92 08 01 	sts	0x0108, r1	; 0x800108 <__data_end>
+C:\Users\Thomas\Documents\GitHub\StupedBax\StupedBaxV3\SensorTest/SensorTest.ino:39
+}
+ 10e:	08 95       	ret
+
+00000110 <sensorInt()>:
+_Z9sensorIntv():
+C:\Users\Thomas\Documents\GitHub\StupedBax\StupedBaxV3\SensorTest/SensorTest.ino:42
+
+void sensorInt() { 
+  sleep_disable(); //Disable sleep mode.
+ 110:	83 b7       	in	r24, 0x33	; 51
+ 112:	8e 7f       	andi	r24, 0xFE	; 254
+ 114:	83 bf       	out	0x33, r24	; 51
+C:\Users\Thomas\Documents\GitHub\StupedBax\StupedBaxV3\SensorTest/SensorTest.ino:43
+  detachInterrupt(digitalPinToInterrupt(sensorPin)); //Remove interrupt from pin3 
+ 116:	80 91 02 01 	lds	r24, 0x0102	; 0x800102 <sensorPin>
+ 11a:	90 91 03 01 	lds	r25, 0x0103	; 0x800103 <sensorPin+0x1>
+ 11e:	02 97       	sbiw	r24, 0x02	; 2
+ 120:	01 f1       	breq	.+64     	; 0x162 <sensorInt()+0x52>
+C:\Users\Thomas\Documents\GitHub\StupedBax\StupedBaxV3\SensorTest/SensorTest.ino:43 (discriminator 1)
+ 122:	80 91 02 01 	lds	r24, 0x0102	; 0x800102 <sensorPin>
+ 126:	90 91 03 01 	lds	r25, 0x0103	; 0x800103 <sensorPin+0x1>
+ 12a:	03 97       	sbiw	r24, 0x03	; 3
+ 12c:	e1 f0       	breq	.+56     	; 0x166 <sensorInt()+0x56>
+C:\Users\Thomas\Documents\GitHub\StupedBax\StupedBaxV3\SensorTest/SensorTest.ino:43
+ 12e:	8f ef       	ldi	r24, 0xFF	; 255
+C:\Users\Thomas\Documents\GitHub\StupedBax\StupedBaxV3\SensorTest/SensorTest.ino:43 (discriminator 8)
+ 130:	0e 94 30 02 	call	0x460	; 0x460 <detachInterrupt>
+C:\Users\Thomas\Documents\GitHub\StupedBax\StupedBaxV3\SensorTest/SensorTest.ino:44 (discriminator 8)
+  attachInterrupt(digitalPinToInterrupt(sensorPin), lidSleep, LOW); // Enable sleep interrupt
+ 134:	80 91 02 01 	lds	r24, 0x0102	; 0x800102 <sensorPin>
+ 138:	90 91 03 01 	lds	r25, 0x0103	; 0x800103 <sensorPin+0x1>
+ 13c:	02 97       	sbiw	r24, 0x02	; 2
+ 13e:	a9 f0       	breq	.+42     	; 0x16a <sensorInt()+0x5a>
+C:\Users\Thomas\Documents\GitHub\StupedBax\StupedBaxV3\SensorTest/SensorTest.ino:44 (discriminator 1)
+ 140:	80 91 02 01 	lds	r24, 0x0102	; 0x800102 <sensorPin>
+ 144:	90 91 03 01 	lds	r25, 0x0103	; 0x800103 <sensorPin+0x1>
+ 148:	03 97       	sbiw	r24, 0x03	; 3
+ 14a:	89 f0       	breq	.+34     	; 0x16e <sensorInt()+0x5e>
+C:\Users\Thomas\Documents\GitHub\StupedBax\StupedBaxV3\SensorTest/SensorTest.ino:44
+ 14c:	8f ef       	ldi	r24, 0xFF	; 255
+C:\Users\Thomas\Documents\GitHub\StupedBax\StupedBaxV3\SensorTest/SensorTest.ino:44 (discriminator 8)
+ 14e:	50 e0       	ldi	r21, 0x00	; 0
+ 150:	40 e0       	ldi	r20, 0x00	; 0
+ 152:	65 e8       	ldi	r22, 0x85	; 133
+ 154:	70 e0       	ldi	r23, 0x00	; 0
+ 156:	0e 94 10 02 	call	0x420	; 0x420 <attachInterrupt>
+C:\Users\Thomas\Documents\GitHub\StupedBax\StupedBaxV3\SensorTest/SensorTest.ino:45 (discriminator 8)
+  lidActive = true;
+ 15a:	81 e0       	ldi	r24, 0x01	; 1
+ 15c:	80 93 08 01 	sts	0x0108, r24	; 0x800108 <__data_end>
+C:\Users\Thomas\Documents\GitHub\StupedBax\StupedBaxV3\SensorTest/SensorTest.ino:46 (discriminator 8)
+}
+ 160:	08 95       	ret
+C:\Users\Thomas\Documents\GitHub\StupedBax\StupedBaxV3\SensorTest/SensorTest.ino:43
+  lidActive = false;
+}
+
+void sensorInt() { 
+  sleep_disable(); //Disable sleep mode.
+  detachInterrupt(digitalPinToInterrupt(sensorPin)); //Remove interrupt from pin3 
+ 162:	80 e0       	ldi	r24, 0x00	; 0
+ 164:	e5 cf       	rjmp	.-54     	; 0x130 <sensorInt()+0x20>
+ 166:	81 e0       	ldi	r24, 0x01	; 1
+ 168:	e3 cf       	rjmp	.-58     	; 0x130 <sensorInt()+0x20>
+C:\Users\Thomas\Documents\GitHub\StupedBax\StupedBaxV3\SensorTest/SensorTest.ino:44
+  attachInterrupt(digitalPinToInterrupt(sensorPin), lidSleep, LOW); // Enable sleep interrupt
+ 16a:	80 e0       	ldi	r24, 0x00	; 0
+ 16c:	f0 cf       	rjmp	.-32     	; 0x14e <sensorInt()+0x3e>
+ 16e:	81 e0       	ldi	r24, 0x01	; 1
+ 170:	ee cf       	rjmp	.-36     	; 0x14e <sensorInt()+0x3e>
+
+00000172 <sleepNow()>:
+_Z8sleepNowv():
+C:\Users\Thomas\Documents\GitHub\StupedBax\StupedBaxV3\SensorTest/SensorTest.ino:50
+  lidActive = true;
+}
+
+void sleepNow()
+{
+  digitalWrite(LEDPin, LOW); 
+ 172:	80 91 00 01 	lds	r24, 0x0100	; 0x800100 <LEDPin>
+ 176:	90 91 01 01 	lds	r25, 0x0101	; 0x800101 <LEDPin+0x1>
+ 17a:	60 e0       	ldi	r22, 0x00	; 0
+ 17c:	0e 94 f5 02 	call	0x5ea	; 0x5ea <digitalWrite>
+C:\Users\Thomas\Documents\GitHub\StupedBax\StupedBaxV3\SensorTest/SensorTest.ino:52
+
+  sleep_enable();  
+ 180:	83 b7       	in	r24, 0x33	; 51
+ 182:	81 60       	ori	r24, 0x01	; 1
+ 184:	83 bf       	out	0x33, r24	; 51
+C:\Users\Thomas\Documents\GitHub\StupedBax\StupedBaxV3\SensorTest/SensorTest.ino:53
+  detachInterrupt(digitalPinToInterrupt(sensorPin)); // Remove the sleep interrupt
+ 186:	80 91 02 01 	lds	r24, 0x0102	; 0x800102 <sensorPin>
+ 18a:	90 91 03 01 	lds	r25, 0x0103	; 0x800103 <sensorPin+0x1>
+ 18e:	02 97       	sbiw	r24, 0x02	; 2
+ 190:	11 f1       	breq	.+68     	; 0x1d6 <sleepNow()+0x64>
+C:\Users\Thomas\Documents\GitHub\StupedBax\StupedBaxV3\SensorTest/SensorTest.ino:53 (discriminator 1)
+ 192:	80 91 02 01 	lds	r24, 0x0102	; 0x800102 <sensorPin>
+ 196:	90 91 03 01 	lds	r25, 0x0103	; 0x800103 <sensorPin+0x1>
+ 19a:	03 97       	sbiw	r24, 0x03	; 3
+ 19c:	f1 f0       	breq	.+60     	; 0x1da <sleepNow()+0x68>
+C:\Users\Thomas\Documents\GitHub\StupedBax\StupedBaxV3\SensorTest/SensorTest.ino:53
+ 19e:	8f ef       	ldi	r24, 0xFF	; 255
+C:\Users\Thomas\Documents\GitHub\StupedBax\StupedBaxV3\SensorTest/SensorTest.ino:53 (discriminator 8)
+ 1a0:	0e 94 30 02 	call	0x460	; 0x460 <detachInterrupt>
+C:\Users\Thomas\Documents\GitHub\StupedBax\StupedBaxV3\SensorTest/SensorTest.ino:54 (discriminator 8)
+  attachInterrupt(digitalPinToInterrupt(sensorPin), sensorInt, HIGH); // Add sensorInterrupt interrupt
+ 1a4:	80 91 02 01 	lds	r24, 0x0102	; 0x800102 <sensorPin>
+ 1a8:	90 91 03 01 	lds	r25, 0x0103	; 0x800103 <sensorPin+0x1>
+ 1ac:	02 97       	sbiw	r24, 0x02	; 2
+ 1ae:	b9 f0       	breq	.+46     	; 0x1de <sleepNow()+0x6c>
+C:\Users\Thomas\Documents\GitHub\StupedBax\StupedBaxV3\SensorTest/SensorTest.ino:54 (discriminator 1)
+ 1b0:	80 91 02 01 	lds	r24, 0x0102	; 0x800102 <sensorPin>
+ 1b4:	90 91 03 01 	lds	r25, 0x0103	; 0x800103 <sensorPin+0x1>
+ 1b8:	03 97       	sbiw	r24, 0x03	; 3
+ 1ba:	99 f0       	breq	.+38     	; 0x1e2 <sleepNow()+0x70>
+C:\Users\Thomas\Documents\GitHub\StupedBax\StupedBaxV3\SensorTest/SensorTest.ino:54
+ 1bc:	8f ef       	ldi	r24, 0xFF	; 255
+C:\Users\Thomas\Documents\GitHub\StupedBax\StupedBaxV3\SensorTest/SensorTest.ino:54 (discriminator 8)
+ 1be:	41 e0       	ldi	r20, 0x01	; 1
+ 1c0:	50 e0       	ldi	r21, 0x00	; 0
+ 1c2:	68 e8       	ldi	r22, 0x88	; 136
+ 1c4:	70 e0       	ldi	r23, 0x00	; 0
+ 1c6:	0e 94 10 02 	call	0x420	; 0x420 <attachInterrupt>
+C:\Users\Thomas\Documents\GitHub\StupedBax\StupedBaxV3\SensorTest/SensorTest.ino:56 (discriminator 8)
+  
+  set_sleep_mode(SLEEP_MODE_PWR_DOWN);
+ 1ca:	83 b7       	in	r24, 0x33	; 51
+ 1cc:	81 7f       	andi	r24, 0xF1	; 241
+ 1ce:	84 60       	ori	r24, 0x04	; 4
+ 1d0:	83 bf       	out	0x33, r24	; 51
+C:\Users\Thomas\Documents\GitHub\StupedBax\StupedBaxV3\SensorTest/SensorTest.ino:57 (discriminator 8)
+  sleep_cpu();//activating sleep mode   
+ 1d2:	88 95       	sleep
+C:\Users\Thomas\Documents\GitHub\StupedBax\StupedBaxV3\SensorTest/SensorTest.ino:59 (discriminator 8)
+
+}
+ 1d4:	08 95       	ret
+C:\Users\Thomas\Documents\GitHub\StupedBax\StupedBaxV3\SensorTest/SensorTest.ino:53
+void sleepNow()
+{
+  digitalWrite(LEDPin, LOW); 
+
+  sleep_enable();  
+  detachInterrupt(digitalPinToInterrupt(sensorPin)); // Remove the sleep interrupt
+ 1d6:	80 e0       	ldi	r24, 0x00	; 0
+ 1d8:	e3 cf       	rjmp	.-58     	; 0x1a0 <sleepNow()+0x2e>
+ 1da:	81 e0       	ldi	r24, 0x01	; 1
+ 1dc:	e1 cf       	rjmp	.-62     	; 0x1a0 <sleepNow()+0x2e>
+C:\Users\Thomas\Documents\GitHub\StupedBax\StupedBaxV3\SensorTest/SensorTest.ino:54
+  attachInterrupt(digitalPinToInterrupt(sensorPin), sensorInt, HIGH); // Add sensorInterrupt interrupt
+ 1de:	80 e0       	ldi	r24, 0x00	; 0
+ 1e0:	ee cf       	rjmp	.-36     	; 0x1be <sleepNow()+0x4c>
+ 1e2:	81 e0       	ldi	r24, 0x01	; 1
+ 1e4:	ec cf       	rjmp	.-40     	; 0x1be <sleepNow()+0x4c>
+
+000001e6 <setup>:
+setup():
+C:\Users\Thomas\Documents\GitHub\StupedBax\StupedBaxV3\SensorTest/SensorTest.ino:12
+
+volatile bool lidActive;
+
+void setup() {
+  
+  pinMode(sensorPin, INPUT);
+ 1e6:	80 91 02 01 	lds	r24, 0x0102	; 0x800102 <sensorPin>
+ 1ea:	90 91 03 01 	lds	r25, 0x0103	; 0x800103 <sensorPin+0x1>
+ 1ee:	60 e0       	ldi	r22, 0x00	; 0
+ 1f0:	0e 94 b9 02 	call	0x572	; 0x572 <pinMode>
+C:\Users\Thomas\Documents\GitHub\StupedBax\StupedBaxV3\SensorTest/SensorTest.ino:13
+  pinMode(LEDPin, OUTPUT);
+ 1f4:	80 91 00 01 	lds	r24, 0x0100	; 0x800100 <LEDPin>
+ 1f8:	90 91 01 01 	lds	r25, 0x0101	; 0x800101 <LEDPin+0x1>
+ 1fc:	61 e0       	ldi	r22, 0x01	; 1
+ 1fe:	0e 94 b9 02 	call	0x572	; 0x572 <pinMode>
+C:\Users\Thomas\Documents\GitHub\StupedBax\StupedBaxV3\SensorTest/SensorTest.ino:17
+
+
+  // If sensor is active from beginning, enable sleep interrupt
+  if(digitalRead(sensorPin) == HIGH) {
+ 202:	80 91 02 01 	lds	r24, 0x0102	; 0x800102 <sensorPin>
+ 206:	90 91 03 01 	lds	r25, 0x0103	; 0x800103 <sensorPin+0x1>
+ 20a:	0e 94 23 03 	call	0x646	; 0x646 <digitalRead>
+ 20e:	01 97       	sbiw	r24, 0x01	; 1
+ 210:	f1 f4       	brne	.+60     	; 0x24e <setup+0x68>
+C:\Users\Thomas\Documents\GitHub\StupedBax\StupedBaxV3\SensorTest/SensorTest.ino:18
+    digitalWrite(LEDPin, HIGH);
+ 212:	80 91 00 01 	lds	r24, 0x0100	; 0x800100 <LEDPin>
+ 216:	90 91 01 01 	lds	r25, 0x0101	; 0x800101 <LEDPin+0x1>
+ 21a:	61 e0       	ldi	r22, 0x01	; 1
+ 21c:	0e 94 f5 02 	call	0x5ea	; 0x5ea <digitalWrite>
+C:\Users\Thomas\Documents\GitHub\StupedBax\StupedBaxV3\SensorTest/SensorTest.ino:19
+    attachInterrupt(digitalPinToInterrupt(sensorPin),sleepNow,LOW);
+ 220:	80 91 02 01 	lds	r24, 0x0102	; 0x800102 <sensorPin>
+ 224:	90 91 03 01 	lds	r25, 0x0103	; 0x800103 <sensorPin+0x1>
+ 228:	02 97       	sbiw	r24, 0x02	; 2
+ 22a:	69 f0       	breq	.+26     	; 0x246 <setup+0x60>
+C:\Users\Thomas\Documents\GitHub\StupedBax\StupedBaxV3\SensorTest/SensorTest.ino:19 (discriminator 1)
+ 22c:	80 91 02 01 	lds	r24, 0x0102	; 0x800102 <sensorPin>
+ 230:	90 91 03 01 	lds	r25, 0x0103	; 0x800103 <sensorPin+0x1>
+ 234:	03 97       	sbiw	r24, 0x03	; 3
+ 236:	49 f0       	breq	.+18     	; 0x24a <setup+0x64>
+C:\Users\Thomas\Documents\GitHub\StupedBax\StupedBaxV3\SensorTest/SensorTest.ino:19
+ 238:	8f ef       	ldi	r24, 0xFF	; 255
+C:\Users\Thomas\Documents\GitHub\StupedBax\StupedBaxV3\SensorTest/SensorTest.ino:19 (discriminator 8)
+ 23a:	50 e0       	ldi	r21, 0x00	; 0
+ 23c:	40 e0       	ldi	r20, 0x00	; 0
+ 23e:	69 eb       	ldi	r22, 0xB9	; 185
+ 240:	70 e0       	ldi	r23, 0x00	; 0
+ 242:	0c 94 10 02 	jmp	0x420	; 0x420 <attachInterrupt>
+C:\Users\Thomas\Documents\GitHub\StupedBax\StupedBaxV3\SensorTest/SensorTest.ino:19
+ 246:	80 e0       	ldi	r24, 0x00	; 0
+ 248:	f8 cf       	rjmp	.-16     	; 0x23a <setup+0x54>
+ 24a:	81 e0       	ldi	r24, 0x01	; 1
+ 24c:	f6 cf       	rjmp	.-20     	; 0x23a <setup+0x54>
+C:\Users\Thomas\Documents\GitHub\StupedBax\StupedBaxV3\SensorTest/SensorTest.ino:21
+  } else {
+     sleepNow();
+ 24e:	0c 94 b9 00 	jmp	0x172	; 0x172 <sleepNow()>
+
+00000252 <loop>:
+loop():
+C:\Users\Thomas\Documents\GitHub\StupedBax\StupedBaxV3\SensorTest/SensorTest.ino:30
+}
+
+void loop() {
+
+  // If sensor detected movement
+  if(digitalRead(sensorPin) == HIGH || lidActive) {
+ 252:	80 91 02 01 	lds	r24, 0x0102	; 0x800102 <sensorPin>
+ 256:	90 91 03 01 	lds	r25, 0x0103	; 0x800103 <sensorPin+0x1>
+ 25a:	0e 94 23 03 	call	0x646	; 0x646 <digitalRead>
+ 25e:	01 97       	sbiw	r24, 0x01	; 1
+ 260:	21 f0       	breq	.+8      	; 0x26a <loop+0x18>
+C:\Users\Thomas\Documents\GitHub\StupedBax\StupedBaxV3\SensorTest/SensorTest.ino:30 (discriminator 2)
+ 262:	80 91 08 01 	lds	r24, 0x0108	; 0x800108 <__data_end>
+ 266:	88 23       	and	r24, r24
+ 268:	f1 f0       	breq	.+60     	; 0x2a6 <loop+0x54>
+C:\Users\Thomas\Documents\GitHub\StupedBax\StupedBaxV3\SensorTest/SensorTest.ino:31
+      digitalWrite(LEDPin, HIGH);
+ 26a:	80 91 00 01 	lds	r24, 0x0100	; 0x800100 <LEDPin>
+ 26e:	90 91 01 01 	lds	r25, 0x0101	; 0x800101 <LEDPin+0x1>
+ 272:	61 e0       	ldi	r22, 0x01	; 1
+ 274:	0e 94 f5 02 	call	0x5ea	; 0x5ea <digitalWrite>
+C:\Users\Thomas\Documents\GitHub\StupedBax\StupedBaxV3\SensorTest/SensorTest.ino:32
+      attachInterrupt(digitalPinToInterrupt(sensorPin),sleepNow,LOW);
+ 278:	80 91 02 01 	lds	r24, 0x0102	; 0x800102 <sensorPin>
+ 27c:	90 91 03 01 	lds	r25, 0x0103	; 0x800103 <sensorPin+0x1>
+ 280:	02 97       	sbiw	r24, 0x02	; 2
+ 282:	69 f0       	breq	.+26     	; 0x29e <loop+0x4c>
+C:\Users\Thomas\Documents\GitHub\StupedBax\StupedBaxV3\SensorTest/SensorTest.ino:32 (discriminator 1)
+ 284:	80 91 02 01 	lds	r24, 0x0102	; 0x800102 <sensorPin>
+ 288:	90 91 03 01 	lds	r25, 0x0103	; 0x800103 <sensorPin+0x1>
+ 28c:	03 97       	sbiw	r24, 0x03	; 3
+ 28e:	49 f0       	breq	.+18     	; 0x2a2 <loop+0x50>
+C:\Users\Thomas\Documents\GitHub\StupedBax\StupedBaxV3\SensorTest/SensorTest.ino:32
+ 290:	8f ef       	ldi	r24, 0xFF	; 255
+C:\Users\Thomas\Documents\GitHub\StupedBax\StupedBaxV3\SensorTest/SensorTest.ino:32 (discriminator 8)
+ 292:	50 e0       	ldi	r21, 0x00	; 0
+ 294:	40 e0       	ldi	r20, 0x00	; 0
+ 296:	69 eb       	ldi	r22, 0xB9	; 185
+ 298:	70 e0       	ldi	r23, 0x00	; 0
+ 29a:	0c 94 10 02 	jmp	0x420	; 0x420 <attachInterrupt>
+C:\Users\Thomas\Documents\GitHub\StupedBax\StupedBaxV3\SensorTest/SensorTest.ino:32
+ 29e:	80 e0       	ldi	r24, 0x00	; 0
+ 2a0:	f8 cf       	rjmp	.-16     	; 0x292 <loop+0x40>
+ 2a2:	81 e0       	ldi	r24, 0x01	; 1
+ 2a4:	f6 cf       	rjmp	.-20     	; 0x292 <loop+0x40>
+C:\Users\Thomas\Documents\GitHub\StupedBax\StupedBaxV3\SensorTest/SensorTest.ino:35
+  }
+      
+}
+ 2a6:	08 95       	ret
+
+000002a8 <__vector_11>:
+__vector_11():
+C:\Users\Thomas\Documents\Arduino\libraries\Servo\src\avr/Servo.cpp:81
+
+#ifndef WIRING // Wiring pre-defines signal handlers so don't define any if compiling for the Wiring platform
+// Interrupt handlers for Arduino
+#if defined(_useTimer1)
+SIGNAL (TIMER1_COMPA_vect)
+{
+ 2a8:	1f 92       	push	r1
+ 2aa:	0f 92       	push	r0
+ 2ac:	0f b6       	in	r0, 0x3f	; 63
+ 2ae:	0f 92       	push	r0
+ 2b0:	11 24       	eor	r1, r1
+ 2b2:	2f 93       	push	r18
+ 2b4:	3f 93       	push	r19
+ 2b6:	4f 93       	push	r20
+ 2b8:	5f 93       	push	r21
+ 2ba:	6f 93       	push	r22
+ 2bc:	7f 93       	push	r23
+ 2be:	8f 93       	push	r24
+ 2c0:	9f 93       	push	r25
+ 2c2:	af 93       	push	r26
+ 2c4:	bf 93       	push	r27
+ 2c6:	ef 93       	push	r30
+ 2c8:	ff 93       	push	r31
+handle_interrupts():
+C:\Users\Thomas\Documents\Arduino\libraries\Servo\src\avr/Servo.cpp:54
+
+/************ static functions common to all instances ***********************/
+
+static inline void handle_interrupts(timer16_Sequence_t timer, volatile uint16_t *TCNTn, volatile uint16_t* OCRnA)
+{
+  if( Channel[timer] < 0 )
+ 2ca:	80 91 0a 01 	lds	r24, 0x010A	; 0x80010a <Channel>
+ 2ce:	87 ff       	sbrs	r24, 7
+ 2d0:	27 c0       	rjmp	.+78     	; 0x320 <__vector_11+0x78>
+C:\Users\Thomas\Documents\Arduino\libraries\Servo\src\avr/Servo.cpp:55
+    *TCNTn = 0; // channel set to -1 indicated that refresh interval completed so reset the timer
+ 2d2:	10 92 85 00 	sts	0x0085, r1	; 0x800085 <__DATA_REGION_ORIGIN__+0x25>
+ 2d6:	10 92 84 00 	sts	0x0084, r1	; 0x800084 <__DATA_REGION_ORIGIN__+0x24>
+C:\Users\Thomas\Documents\Arduino\libraries\Servo\src\avr/Servo.cpp:61
+  else{
+    if( SERVO_INDEX(timer,Channel[timer]) < ServoCount && SERVO(timer,Channel[timer]).Pin.isActive == true )
+      digitalWrite( SERVO(timer,Channel[timer]).Pin.nbr,LOW); // pulse this channel low if activated
+  }
+
+  Channel[timer]++;    // increment to the next channel
+ 2da:	80 91 0a 01 	lds	r24, 0x010A	; 0x80010a <Channel>
+ 2de:	8f 5f       	subi	r24, 0xFF	; 255
+ 2e0:	80 93 0a 01 	sts	0x010A, r24	; 0x80010a <Channel>
+C:\Users\Thomas\Documents\Arduino\libraries\Servo\src\avr/Servo.cpp:62
+  if( SERVO_INDEX(timer,Channel[timer]) < ServoCount && Channel[timer] < SERVOS_PER_TIMER) {
+ 2e4:	80 91 0a 01 	lds	r24, 0x010A	; 0x80010a <Channel>
+ 2e8:	08 2e       	mov	r0, r24
+ 2ea:	00 0c       	add	r0, r0
+ 2ec:	99 0b       	sbc	r25, r25
+ 2ee:	20 91 09 01 	lds	r18, 0x0109	; 0x800109 <ServoCount>
+ 2f2:	28 17       	cp	r18, r24
+ 2f4:	19 06       	cpc	r1, r25
+ 2f6:	29 f0       	breq	.+10     	; 0x302 <__vector_11+0x5a>
+ 2f8:	24 f0       	brlt	.+8      	; 0x302 <__vector_11+0x5a>
+ 2fa:	80 91 0a 01 	lds	r24, 0x010A	; 0x80010a <Channel>
+ 2fe:	8c 30       	cpi	r24, 0x0C	; 12
+ 300:	dc f1       	brlt	.+118    	; 0x378 <__vector_11+0xd0>
+C:\Users\Thomas\Documents\Arduino\libraries\Servo\src\avr/Servo.cpp:69
+    if(SERVO(timer,Channel[timer]).Pin.isActive == true)     // check if activated
+      digitalWrite( SERVO(timer,Channel[timer]).Pin.nbr,HIGH); // its an active channel so pulse it high
+  }
+  else {
+    // finished all channels so wait for the refresh period to expire before starting over
+    if( ((unsigned)*TCNTn) + 4 < usToTicks(REFRESH_INTERVAL) )  // allow a few ticks to ensure the next OCR1A not missed
+ 302:	80 91 84 00 	lds	r24, 0x0084	; 0x800084 <__DATA_REGION_ORIGIN__+0x24>
+ 306:	90 91 85 00 	lds	r25, 0x0085	; 0x800085 <__DATA_REGION_ORIGIN__+0x25>
+ 30a:	04 96       	adiw	r24, 0x04	; 4
+ 30c:	80 32       	cpi	r24, 0x20	; 32
+ 30e:	9e 44       	sbci	r25, 0x4E	; 78
+ 310:	08 f4       	brcc	.+2      	; 0x314 <__vector_11+0x6c>
+ 312:	7b c0       	rjmp	.+246    	; 0x40a <__LOCK_REGION_LENGTH__+0xa>
+C:\Users\Thomas\Documents\Arduino\libraries\Servo\src\avr/Servo.cpp:72
+      *OCRnA = (unsigned int)usToTicks(REFRESH_INTERVAL);
+    else
+      *OCRnA = *TCNTn + 4;  // at least REFRESH_INTERVAL has elapsed
+ 314:	80 91 84 00 	lds	r24, 0x0084	; 0x800084 <__DATA_REGION_ORIGIN__+0x24>
+ 318:	90 91 85 00 	lds	r25, 0x0085	; 0x800085 <__DATA_REGION_ORIGIN__+0x25>
+ 31c:	04 96       	adiw	r24, 0x04	; 4
+ 31e:	77 c0       	rjmp	.+238    	; 0x40e <__LOCK_REGION_LENGTH__+0xe>
+C:\Users\Thomas\Documents\Arduino\libraries\Servo\src\avr/Servo.cpp:57
+static inline void handle_interrupts(timer16_Sequence_t timer, volatile uint16_t *TCNTn, volatile uint16_t* OCRnA)
+{
+  if( Channel[timer] < 0 )
+    *TCNTn = 0; // channel set to -1 indicated that refresh interval completed so reset the timer
+  else{
+    if( SERVO_INDEX(timer,Channel[timer]) < ServoCount && SERVO(timer,Channel[timer]).Pin.isActive == true )
+ 320:	80 91 0a 01 	lds	r24, 0x010A	; 0x80010a <Channel>
+ 324:	08 2e       	mov	r0, r24
+ 326:	00 0c       	add	r0, r0
+ 328:	99 0b       	sbc	r25, r25
+ 32a:	20 91 09 01 	lds	r18, 0x0109	; 0x800109 <ServoCount>
+ 32e:	28 17       	cp	r18, r24
+ 330:	19 06       	cpc	r1, r25
+ 332:	99 f2       	breq	.-90     	; 0x2da <__vector_11+0x32>
+ 334:	94 f2       	brlt	.-92     	; 0x2da <__vector_11+0x32>
+ 336:	e0 91 0a 01 	lds	r30, 0x010A	; 0x80010a <Channel>
+ 33a:	8e 2f       	mov	r24, r30
+ 33c:	ee 0f       	add	r30, r30
+ 33e:	99 0b       	sbc	r25, r25
+ 340:	fc 01       	movw	r30, r24
+ 342:	ee 0f       	add	r30, r30
+ 344:	ff 1f       	adc	r31, r31
+ 346:	e8 0f       	add	r30, r24
+ 348:	f9 1f       	adc	r31, r25
+ 34a:	e5 5f       	subi	r30, 0xF5	; 245
+ 34c:	fe 4f       	sbci	r31, 0xFE	; 254
+ 34e:	80 81       	ld	r24, Z
+ 350:	86 ff       	sbrs	r24, 6
+ 352:	c3 cf       	rjmp	.-122    	; 0x2da <__vector_11+0x32>
+C:\Users\Thomas\Documents\Arduino\libraries\Servo\src\avr/Servo.cpp:58
+      digitalWrite( SERVO(timer,Channel[timer]).Pin.nbr,LOW); // pulse this channel low if activated
+ 354:	e0 91 0a 01 	lds	r30, 0x010A	; 0x80010a <Channel>
+ 358:	8e 2f       	mov	r24, r30
+ 35a:	ee 0f       	add	r30, r30
+ 35c:	99 0b       	sbc	r25, r25
+ 35e:	fc 01       	movw	r30, r24
+ 360:	ee 0f       	add	r30, r30
+ 362:	ff 1f       	adc	r31, r31
+ 364:	e8 0f       	add	r30, r24
+ 366:	f9 1f       	adc	r31, r25
+ 368:	e5 5f       	subi	r30, 0xF5	; 245
+ 36a:	fe 4f       	sbci	r31, 0xFE	; 254
+ 36c:	80 81       	ld	r24, Z
+ 36e:	60 e0       	ldi	r22, 0x00	; 0
+ 370:	8f 73       	andi	r24, 0x3F	; 63
+ 372:	0e 94 f5 02 	call	0x5ea	; 0x5ea <digitalWrite>
+ 376:	b1 cf       	rjmp	.-158    	; 0x2da <__vector_11+0x32>
+C:\Users\Thomas\Documents\Arduino\libraries\Servo\src\avr/Servo.cpp:63
+  }
+
+  Channel[timer]++;    // increment to the next channel
+  if( SERVO_INDEX(timer,Channel[timer]) < ServoCount && Channel[timer] < SERVOS_PER_TIMER) {
+    *OCRnA = *TCNTn + SERVO(timer,Channel[timer]).ticks;
+ 378:	20 91 84 00 	lds	r18, 0x0084	; 0x800084 <__DATA_REGION_ORIGIN__+0x24>
+ 37c:	30 91 85 00 	lds	r19, 0x0085	; 0x800085 <__DATA_REGION_ORIGIN__+0x25>
+ 380:	e0 91 0a 01 	lds	r30, 0x010A	; 0x80010a <Channel>
+ 384:	8e 2f       	mov	r24, r30
+ 386:	ee 0f       	add	r30, r30
+ 388:	99 0b       	sbc	r25, r25
+ 38a:	fc 01       	movw	r30, r24
+ 38c:	ee 0f       	add	r30, r30
+ 38e:	ff 1f       	adc	r31, r31
+ 390:	e8 0f       	add	r30, r24
+ 392:	f9 1f       	adc	r31, r25
+ 394:	e5 5f       	subi	r30, 0xF5	; 245
+ 396:	fe 4f       	sbci	r31, 0xFE	; 254
+ 398:	81 81       	ldd	r24, Z+1	; 0x01
+ 39a:	92 81       	ldd	r25, Z+2	; 0x02
+ 39c:	82 0f       	add	r24, r18
+ 39e:	93 1f       	adc	r25, r19
+ 3a0:	90 93 89 00 	sts	0x0089, r25	; 0x800089 <__DATA_REGION_ORIGIN__+0x29>
+ 3a4:	80 93 88 00 	sts	0x0088, r24	; 0x800088 <__DATA_REGION_ORIGIN__+0x28>
+C:\Users\Thomas\Documents\Arduino\libraries\Servo\src\avr/Servo.cpp:64
+    if(SERVO(timer,Channel[timer]).Pin.isActive == true)     // check if activated
+ 3a8:	e0 91 0a 01 	lds	r30, 0x010A	; 0x80010a <Channel>
+ 3ac:	8e 2f       	mov	r24, r30
+ 3ae:	ee 0f       	add	r30, r30
+ 3b0:	99 0b       	sbc	r25, r25
+ 3b2:	fc 01       	movw	r30, r24
+ 3b4:	ee 0f       	add	r30, r30
+ 3b6:	ff 1f       	adc	r31, r31
+ 3b8:	e8 0f       	add	r30, r24
+ 3ba:	f9 1f       	adc	r31, r25
+ 3bc:	e5 5f       	subi	r30, 0xF5	; 245
+ 3be:	fe 4f       	sbci	r31, 0xFE	; 254
+ 3c0:	80 81       	ld	r24, Z
+ 3c2:	86 ff       	sbrs	r24, 6
+ 3c4:	11 c0       	rjmp	.+34     	; 0x3e8 <__vector_11+0x140>
+C:\Users\Thomas\Documents\Arduino\libraries\Servo\src\avr/Servo.cpp:65
+      digitalWrite( SERVO(timer,Channel[timer]).Pin.nbr,HIGH); // its an active channel so pulse it high
+ 3c6:	e0 91 0a 01 	lds	r30, 0x010A	; 0x80010a <Channel>
+ 3ca:	8e 2f       	mov	r24, r30
+ 3cc:	ee 0f       	add	r30, r30
+ 3ce:	99 0b       	sbc	r25, r25
+ 3d0:	fc 01       	movw	r30, r24
+ 3d2:	ee 0f       	add	r30, r30
+ 3d4:	ff 1f       	adc	r31, r31
+ 3d6:	e8 0f       	add	r30, r24
+ 3d8:	f9 1f       	adc	r31, r25
+ 3da:	e5 5f       	subi	r30, 0xF5	; 245
+ 3dc:	fe 4f       	sbci	r31, 0xFE	; 254
+ 3de:	80 81       	ld	r24, Z
+ 3e0:	61 e0       	ldi	r22, 0x01	; 1
+ 3e2:	8f 73       	andi	r24, 0x3F	; 63
+ 3e4:	0e 94 f5 02 	call	0x5ea	; 0x5ea <digitalWrite>
+__vector_11():
+C:\Users\Thomas\Documents\Arduino\libraries\Servo\src\avr/Servo.cpp:83
+// Interrupt handlers for Arduino
+#if defined(_useTimer1)
+SIGNAL (TIMER1_COMPA_vect)
+{
+  handle_interrupts(_timer1, &TCNT1, &OCR1A);
+}
+ 3e8:	ff 91       	pop	r31
+ 3ea:	ef 91       	pop	r30
+ 3ec:	bf 91       	pop	r27
+ 3ee:	af 91       	pop	r26
+ 3f0:	9f 91       	pop	r25
+ 3f2:	8f 91       	pop	r24
+ 3f4:	7f 91       	pop	r23
+ 3f6:	6f 91       	pop	r22
+ 3f8:	5f 91       	pop	r21
+ 3fa:	4f 91       	pop	r20
+ 3fc:	3f 91       	pop	r19
+ 3fe:	2f 91       	pop	r18
+ 400:	0f 90       	pop	r0
+ 402:	0f be       	out	0x3f, r0	; 63
+ 404:	0f 90       	pop	r0
+ 406:	1f 90       	pop	r1
+ 408:	18 95       	reti
+handle_interrupts():
+C:\Users\Thomas\Documents\Arduino\libraries\Servo\src\avr/Servo.cpp:70
+      digitalWrite( SERVO(timer,Channel[timer]).Pin.nbr,HIGH); // its an active channel so pulse it high
+  }
+  else {
+    // finished all channels so wait for the refresh period to expire before starting over
+    if( ((unsigned)*TCNTn) + 4 < usToTicks(REFRESH_INTERVAL) )  // allow a few ticks to ensure the next OCR1A not missed
+      *OCRnA = (unsigned int)usToTicks(REFRESH_INTERVAL);
+ 40a:	80 e2       	ldi	r24, 0x20	; 32
+ 40c:	9e e4       	ldi	r25, 0x4E	; 78
+C:\Users\Thomas\Documents\Arduino\libraries\Servo\src\avr/Servo.cpp:72
+    else
+      *OCRnA = *TCNTn + 4;  // at least REFRESH_INTERVAL has elapsed
+ 40e:	90 93 89 00 	sts	0x0089, r25	; 0x800089 <__DATA_REGION_ORIGIN__+0x29>
+ 412:	80 93 88 00 	sts	0x0088, r24	; 0x800088 <__DATA_REGION_ORIGIN__+0x28>
+C:\Users\Thomas\Documents\Arduino\libraries\Servo\src\avr/Servo.cpp:73
+    Channel[timer] = -1; // this will get incremented at the end of the refresh period to start again at the first channel
+ 416:	8f ef       	ldi	r24, 0xFF	; 255
+ 418:	80 93 0a 01 	sts	0x010A, r24	; 0x80010a <Channel>
+__vector_11():
+C:\Users\Thomas\Documents\Arduino\libraries\Servo\src\avr/Servo.cpp:83
+// Interrupt handlers for Arduino
+#if defined(_useTimer1)
+SIGNAL (TIMER1_COMPA_vect)
+{
+  handle_interrupts(_timer1, &TCNT1, &OCR1A);
+}
+ 41c:	e5 cf       	rjmp	.-54     	; 0x3e8 <__vector_11+0x140>
+
+0000041e <nothing>:
+nothing():
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/WInterrupts.c:36
+
+#include "wiring_private.h"
+
+static void nothing(void) 
+{
+}
+ 41e:	08 95       	ret
+
+00000420 <attachInterrupt>:
+attachInterrupt():
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/WInterrupts.c:64
+  #endif
+};
+
+void attachInterrupt(uint8_t interruptNum, void (*userFunc)(void), int mode) 
+{
+  if(interruptNum < EXTERNAL_NUM_INTERRUPTS) 
+ 420:	82 30       	cpi	r24, 0x02	; 2
+ 422:	e8 f4       	brcc	.+58     	; 0x45e <attachInterrupt+0x3e>
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/WInterrupts.c:66
+  {
+    intFunc[interruptNum] = userFunc;
+ 424:	e8 2f       	mov	r30, r24
+ 426:	f0 e0       	ldi	r31, 0x00	; 0
+ 428:	ee 0f       	add	r30, r30
+ 42a:	ff 1f       	adc	r31, r31
+ 42c:	ec 5f       	subi	r30, 0xFC	; 252
+ 42e:	fe 4f       	sbci	r31, 0xFE	; 254
+ 430:	71 83       	std	Z+1, r23	; 0x01
+ 432:	60 83       	st	Z, r22
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/WInterrupts.c:74
+    // edge, or falling edge).  The mode constants were chosen to correspond
+    // to the configuration bits in the hardware register, so we simply shift
+    // the mode into place.
+    
+    // Enable interrupt        
+    switch(interruptNum) 
+ 434:	81 30       	cpi	r24, 0x01	; 1
+ 436:	41 f0       	breq	.+16     	; 0x448 <attachInterrupt+0x28>
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/WInterrupts.c:228
+      #elif defined(__AVR_ATmega48__) || defined(__AVR_ATmega48P__) || defined(__AVR_ATmega48PB__) \
+      || defined(__AVR_ATmega88__)  || defined(__AVR_ATmega88P__)  || defined(__AVR_ATmega88PB__)  \
+      || defined(__AVR_ATmega168__) || defined(__AVR_ATmega168P__) || defined(__AVR_ATmega168PB__) \
+      || defined(__AVR_ATmega328__) || defined(__AVR_ATmega328P__) || defined(__AVR_ATmega328PB__)
+        case 0:
+          EICRA = (EICRA & ~((1 << ISC00) | (1 << ISC01))) | (mode << ISC00);
+ 438:	80 91 69 00 	lds	r24, 0x0069	; 0x800069 <__DATA_REGION_ORIGIN__+0x9>
+ 43c:	8c 7f       	andi	r24, 0xFC	; 252
+ 43e:	48 2b       	or	r20, r24
+ 440:	40 93 69 00 	sts	0x0069, r20	; 0x800069 <__DATA_REGION_ORIGIN__+0x9>
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/WInterrupts.c:229
+          EIMSK |= (1 << INT0);
+ 444:	e8 9a       	sbi	0x1d, 0	; 29
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/WInterrupts.c:230
+          break;
+ 446:	08 95       	ret
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/WInterrupts.c:232
+        case 1:
+          EICRA = (EICRA & ~((1 << ISC10) | (1 << ISC11))) | (mode << ISC10);
+ 448:	80 91 69 00 	lds	r24, 0x0069	; 0x800069 <__DATA_REGION_ORIGIN__+0x9>
+ 44c:	83 7f       	andi	r24, 0xF3	; 243
+ 44e:	44 0f       	add	r20, r20
+ 450:	55 1f       	adc	r21, r21
+ 452:	44 0f       	add	r20, r20
+ 454:	55 1f       	adc	r21, r21
+ 456:	48 2b       	or	r20, r24
+ 458:	40 93 69 00 	sts	0x0069, r20	; 0x800069 <__DATA_REGION_ORIGIN__+0x9>
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/WInterrupts.c:233
+          EIMSK |= (1 << INT1);
+ 45c:	e9 9a       	sbi	0x1d, 1	; 29
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/WInterrupts.c:239
+          break;
+              
+      #endif
+    }
+  }
+}
+ 45e:	08 95       	ret
+
+00000460 <detachInterrupt>:
+detachInterrupt():
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/WInterrupts.c:243
+
+void detachInterrupt(uint8_t interruptNum) 
+{
+  if(interruptNum < EXTERNAL_NUM_INTERRUPTS) 
+ 460:	82 30       	cpi	r24, 0x02	; 2
+ 462:	68 f4       	brcc	.+26     	; 0x47e <detachInterrupt+0x1e>
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/WInterrupts.c:246
+  {
+    // Disable interrupt
+    switch(interruptNum) 
+ 464:	e8 2f       	mov	r30, r24
+ 466:	f0 e0       	ldi	r31, 0x00	; 0
+ 468:	81 30       	cpi	r24, 0x01	; 1
+ 46a:	51 f0       	breq	.+20     	; 0x480 <detachInterrupt+0x20>
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/WInterrupts.c:366
+      #elif defined(__AVR_ATmega48__) || defined(__AVR_ATmega48P__) || defined(__AVR_ATmega48PB__) \
+      || defined(__AVR_ATmega88__)  || defined(__AVR_ATmega88P__)  || defined(__AVR_ATmega88PB__)  \
+      || defined(__AVR_ATmega168__) || defined(__AVR_ATmega168P__) || defined(__AVR_ATmega168PB__) \
+      || defined(__AVR_ATmega328__) || defined(__AVR_ATmega328P__) || defined(__AVR_ATmega328PB__)
+        case 0:
+          EIMSK &= ~(1 << INT0);
+ 46c:	e8 98       	cbi	0x1d, 0	; 29
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/WInterrupts.c:374
+          EIMSK &= ~(1 << INT1);
+          break;
+             
+      #endif
+    }      
+    intFunc[interruptNum] = nothing;
+ 46e:	ee 0f       	add	r30, r30
+ 470:	ff 1f       	adc	r31, r31
+ 472:	ec 5f       	subi	r30, 0xFC	; 252
+ 474:	fe 4f       	sbci	r31, 0xFE	; 254
+ 476:	8f e0       	ldi	r24, 0x0F	; 15
+ 478:	92 e0       	ldi	r25, 0x02	; 2
+ 47a:	91 83       	std	Z+1, r25	; 0x01
+ 47c:	80 83       	st	Z, r24
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/WInterrupts.c:376
+  }
+}
+ 47e:	08 95       	ret
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/WInterrupts.c:369
+      || defined(__AVR_ATmega328__) || defined(__AVR_ATmega328P__) || defined(__AVR_ATmega328PB__)
+        case 0:
+          EIMSK &= ~(1 << INT0);
+          break;
+        case 1:
+          EIMSK &= ~(1 << INT1);
+ 480:	e9 98       	cbi	0x1d, 1	; 29
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/WInterrupts.c:370
+          break;
+ 482:	f5 cf       	rjmp	.-22     	; 0x46e <detachInterrupt+0xe>
+
+00000484 <__vector_1>:
+__vector_1():
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/WInterrupts.c:441
+// ATmega48/P/PB, ATmega88/P/PB, ATmega168/P/PB, ATmega328/P/PB
+#elif defined(__AVR_ATmega48__) || defined(__AVR_ATmega48P__) || defined(__AVR_ATmega48PB__) \
+|| defined(__AVR_ATmega88__)  || defined(__AVR_ATmega88P__)  || defined(__AVR_ATmega88PB__)  \
+|| defined(__AVR_ATmega168__) || defined(__AVR_ATmega168P__) || defined(__AVR_ATmega168PB__) \
+|| defined(__AVR_ATmega328__) || defined(__AVR_ATmega328P__) || defined(__AVR_ATmega328PB__)
+  IMPLEMENT_ISR(INT0_vect, EXTERNAL_INT_0)
+ 484:	1f 92       	push	r1
+ 486:	0f 92       	push	r0
+ 488:	0f b6       	in	r0, 0x3f	; 63
+ 48a:	0f 92       	push	r0
+ 48c:	11 24       	eor	r1, r1
+ 48e:	2f 93       	push	r18
+ 490:	3f 93       	push	r19
+ 492:	4f 93       	push	r20
+ 494:	5f 93       	push	r21
+ 496:	6f 93       	push	r22
+ 498:	7f 93       	push	r23
+ 49a:	8f 93       	push	r24
+ 49c:	9f 93       	push	r25
+ 49e:	af 93       	push	r26
+ 4a0:	bf 93       	push	r27
+ 4a2:	ef 93       	push	r30
+ 4a4:	ff 93       	push	r31
+ 4a6:	e0 91 04 01 	lds	r30, 0x0104	; 0x800104 <intFunc>
+ 4aa:	f0 91 05 01 	lds	r31, 0x0105	; 0x800105 <intFunc+0x1>
+ 4ae:	09 95       	icall
+ 4b0:	ff 91       	pop	r31
+ 4b2:	ef 91       	pop	r30
+ 4b4:	bf 91       	pop	r27
+ 4b6:	af 91       	pop	r26
+ 4b8:	9f 91       	pop	r25
+ 4ba:	8f 91       	pop	r24
+ 4bc:	7f 91       	pop	r23
+ 4be:	6f 91       	pop	r22
+ 4c0:	5f 91       	pop	r21
+ 4c2:	4f 91       	pop	r20
+ 4c4:	3f 91       	pop	r19
+ 4c6:	2f 91       	pop	r18
+ 4c8:	0f 90       	pop	r0
+ 4ca:	0f be       	out	0x3f, r0	; 63
+ 4cc:	0f 90       	pop	r0
+ 4ce:	1f 90       	pop	r1
+ 4d0:	18 95       	reti
+
+000004d2 <__vector_2>:
+__vector_2():
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/WInterrupts.c:442
+  IMPLEMENT_ISR(INT1_vect, EXTERNAL_INT_1)
+ 4d2:	1f 92       	push	r1
+ 4d4:	0f 92       	push	r0
+ 4d6:	0f b6       	in	r0, 0x3f	; 63
+ 4d8:	0f 92       	push	r0
+ 4da:	11 24       	eor	r1, r1
+ 4dc:	2f 93       	push	r18
+ 4de:	3f 93       	push	r19
+ 4e0:	4f 93       	push	r20
+ 4e2:	5f 93       	push	r21
+ 4e4:	6f 93       	push	r22
+ 4e6:	7f 93       	push	r23
+ 4e8:	8f 93       	push	r24
+ 4ea:	9f 93       	push	r25
+ 4ec:	af 93       	push	r26
+ 4ee:	bf 93       	push	r27
+ 4f0:	ef 93       	push	r30
+ 4f2:	ff 93       	push	r31
+ 4f4:	e0 91 06 01 	lds	r30, 0x0106	; 0x800106 <intFunc+0x2>
+ 4f8:	f0 91 07 01 	lds	r31, 0x0107	; 0x800107 <intFunc+0x3>
+ 4fc:	09 95       	icall
+ 4fe:	ff 91       	pop	r31
+ 500:	ef 91       	pop	r30
+ 502:	bf 91       	pop	r27
+ 504:	af 91       	pop	r26
+ 506:	9f 91       	pop	r25
+ 508:	8f 91       	pop	r24
+ 50a:	7f 91       	pop	r23
+ 50c:	6f 91       	pop	r22
+ 50e:	5f 91       	pop	r21
+ 510:	4f 91       	pop	r20
+ 512:	3f 91       	pop	r19
+ 514:	2f 91       	pop	r18
+ 516:	0f 90       	pop	r0
+ 518:	0f be       	out	0x3f, r0	; 63
+ 51a:	0f 90       	pop	r0
+ 51c:	1f 90       	pop	r1
+ 51e:	18 95       	reti
+
+00000520 <turnOffPWM>:
+turnOffPWM():
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring_digital.c:77
+//
+//static inline void turnOffPWM(uint8_t timer) __attribute__ ((always_inline));
+//static inline void turnOffPWM(uint8_t timer)
+static void turnOffPWM(uint8_t timer)
+{
+  switch (timer)
+ 520:	84 30       	cpi	r24, 0x04	; 4
+ 522:	81 f0       	breq	.+32     	; 0x544 <turnOffPWM+0x24>
+ 524:	28 f4       	brcc	.+10     	; 0x530 <turnOffPWM+0x10>
+ 526:	82 30       	cpi	r24, 0x02	; 2
+ 528:	e9 f0       	breq	.+58     	; 0x564 <turnOffPWM+0x44>
+ 52a:	83 30       	cpi	r24, 0x03	; 3
+ 52c:	f9 f0       	breq	.+62     	; 0x56c <turnOffPWM+0x4c>
+ 52e:	08 95       	ret
+ 530:	88 30       	cpi	r24, 0x08	; 8
+ 532:	71 f0       	breq	.+28     	; 0x550 <turnOffPWM+0x30>
+ 534:	89 30       	cpi	r24, 0x09	; 9
+ 536:	91 f0       	breq	.+36     	; 0x55c <turnOffPWM+0x3c>
+ 538:	85 30       	cpi	r24, 0x05	; 5
+ 53a:	b9 f4       	brne	.+46     	; 0x56a <turnOffPWM+0x4a>
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring_digital.c:87
+        TCCR1A &= ~_BV(COM1A1);
+        break;
+    #endif
+    #if defined(TCCR1A) && defined(COM1B1)
+      case TIMER1B:
+        TCCR1A &= ~_BV(COM1B1);
+ 53c:	80 91 80 00 	lds	r24, 0x0080	; 0x800080 <__DATA_REGION_ORIGIN__+0x20>
+ 540:	8f 7d       	andi	r24, 0xDF	; 223
+ 542:	03 c0       	rjmp	.+6      	; 0x54a <turnOffPWM+0x2a>
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring_digital.c:82
+  switch (timer)
+  {
+    // Timer1
+    #if defined(TCCR1A) && defined(COM1A1)
+      case TIMER1A:
+        TCCR1A &= ~_BV(COM1A1);
+ 544:	80 91 80 00 	lds	r24, 0x0080	; 0x800080 <__DATA_REGION_ORIGIN__+0x20>
+ 548:	8f 77       	andi	r24, 0x7F	; 127
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring_digital.c:87
+        break;
+    #endif
+    #if defined(TCCR1A) && defined(COM1B1)
+      case TIMER1B:
+        TCCR1A &= ~_BV(COM1B1);
+ 54a:	80 93 80 00 	sts	0x0080, r24	; 0x800080 <__DATA_REGION_ORIGIN__+0x20>
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring_digital.c:88
+        break;
+ 54e:	08 95       	ret
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring_digital.c:104
+        TCCR2 &= ~_BV(COM21);
+        break;
+    #endif
+    #if defined(TCCR2A) && defined(COM2A1)
+      case TIMER2A:
+        TCCR2A &= ~_BV(COM2A1);
+ 550:	80 91 b0 00 	lds	r24, 0x00B0	; 0x8000b0 <__DATA_REGION_ORIGIN__+0x50>
+ 554:	8f 77       	andi	r24, 0x7F	; 127
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring_digital.c:109
+        break;
+    #endif
+    #if defined(TCCR2A) && defined(COM2B1)
+      case TIMER2B:
+        TCCR2A &= ~_BV(COM2B1);
+ 556:	80 93 b0 00 	sts	0x00B0, r24	; 0x8000b0 <__DATA_REGION_ORIGIN__+0x50>
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring_digital.c:110
+        break;
+ 55a:	08 95       	ret
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring_digital.c:109
+        TCCR2A &= ~_BV(COM2A1);
+        break;
+    #endif
+    #if defined(TCCR2A) && defined(COM2B1)
+      case TIMER2B:
+        TCCR2A &= ~_BV(COM2B1);
+ 55c:	80 91 b0 00 	lds	r24, 0x00B0	; 0x8000b0 <__DATA_REGION_ORIGIN__+0x50>
+ 560:	8f 7d       	andi	r24, 0xDF	; 223
+ 562:	f9 cf       	rjmp	.-14     	; 0x556 <turnOffPWM+0x36>
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring_digital.c:176
+        TCCR0 &= ~_BV(COM01);
+        break;
+    #endif
+    #if defined(TCCR0A) && defined(COM0A1)
+      case TIMER0A:
+        TCCR0A &= ~_BV(COM0A1);
+ 564:	84 b5       	in	r24, 0x24	; 36
+ 566:	8f 77       	andi	r24, 0x7F	; 127
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring_digital.c:181
+        break;
+    #endif
+    #if defined(TCCR0A) && defined(COM0B1)
+      case TIMER0B:
+        TCCR0A &= ~_BV(COM0B1);
+ 568:	84 bd       	out	0x24, r24	; 36
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring_digital.c:185
+        break;
+    #endif
+  }
+}
+ 56a:	08 95       	ret
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring_digital.c:181
+        TCCR0A &= ~_BV(COM0A1);
+        break;
+    #endif
+    #if defined(TCCR0A) && defined(COM0B1)
+      case TIMER0B:
+        TCCR0A &= ~_BV(COM0B1);
+ 56c:	84 b5       	in	r24, 0x24	; 36
+ 56e:	8f 7d       	andi	r24, 0xDF	; 223
+ 570:	fb cf       	rjmp	.-10     	; 0x568 <turnOffPWM+0x48>
+
+00000572 <pinMode>:
+pinMode():
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring_digital.c:30
+#define ARDUINO_MAIN
+#include "wiring_private.h"
+#include "pins_arduino.h"
+
+void pinMode(uint8_t pin, uint8_t mode)
+{
+ 572:	cf 93       	push	r28
+ 574:	df 93       	push	r29
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring_digital.c:31
+  uint8_t bit = digitalPinToBitMask(pin);
+ 576:	90 e0       	ldi	r25, 0x00	; 0
+ 578:	fc 01       	movw	r30, r24
+ 57a:	e1 58       	subi	r30, 0x81	; 129
+ 57c:	ff 4f       	sbci	r31, 0xFF	; 255
+ 57e:	24 91       	lpm	r18, Z
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring_digital.c:32
+  uint8_t port = digitalPinToPort(pin);
+ 580:	8a 56       	subi	r24, 0x6A	; 106
+ 582:	9f 4f       	sbci	r25, 0xFF	; 255
+ 584:	fc 01       	movw	r30, r24
+ 586:	84 91       	lpm	r24, Z
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring_digital.c:35
+  volatile uint8_t *reg, *out;
+
+  if (port == NOT_A_PIN) return;
+ 588:	88 23       	and	r24, r24
+ 58a:	c9 f0       	breq	.+50     	; 0x5be <pinMode+0x4c>
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring_digital.c:38
+
+  // JWS: can I let the optimizer do this?
+  reg = portModeRegister(port);
+ 58c:	90 e0       	ldi	r25, 0x00	; 0
+ 58e:	88 0f       	add	r24, r24
+ 590:	99 1f       	adc	r25, r25
+ 592:	fc 01       	movw	r30, r24
+ 594:	ef 53       	subi	r30, 0x3F	; 63
+ 596:	ff 4f       	sbci	r31, 0xFF	; 255
+ 598:	a5 91       	lpm	r26, Z+
+ 59a:	b4 91       	lpm	r27, Z
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring_digital.c:39
+  out = portOutputRegister(port);
+ 59c:	fc 01       	movw	r30, r24
+ 59e:	e9 54       	subi	r30, 0x49	; 73
+ 5a0:	ff 4f       	sbci	r31, 0xFF	; 255
+ 5a2:	c5 91       	lpm	r28, Z+
+ 5a4:	d4 91       	lpm	r29, Z
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring_digital.c:41
+
+  if (mode == INPUT) { 
+ 5a6:	61 11       	cpse	r22, r1
+ 5a8:	0d c0       	rjmp	.+26     	; 0x5c4 <pinMode+0x52>
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring_digital.c:42
+    uint8_t oldSREG = SREG;
+ 5aa:	9f b7       	in	r25, 0x3f	; 63
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring_digital.c:43
+    cli();
+ 5ac:	f8 94       	cli
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring_digital.c:44
+    *reg &= ~bit;
+ 5ae:	8c 91       	ld	r24, X
+ 5b0:	20 95       	com	r18
+ 5b2:	82 23       	and	r24, r18
+ 5b4:	8c 93       	st	X, r24
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring_digital.c:45
+    *out &= ~bit;
+ 5b6:	88 81       	ld	r24, Y
+ 5b8:	28 23       	and	r18, r24
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring_digital.c:51
+    SREG = oldSREG;
+  } else if (mode == INPUT_PULLUP) {
+    uint8_t oldSREG = SREG;
+    cli();
+    *reg &= ~bit;
+    *out |= bit;
+ 5ba:	28 83       	st	Y, r18
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring_digital.c:52
+    SREG = oldSREG;
+ 5bc:	9f bf       	out	0x3f, r25	; 63
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring_digital.c:59
+    uint8_t oldSREG = SREG;
+    cli();
+    *reg |= bit;
+    SREG = oldSREG;
+  }
+}
+ 5be:	df 91       	pop	r29
+ 5c0:	cf 91       	pop	r28
+ 5c2:	08 95       	ret
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring_digital.c:47
+    uint8_t oldSREG = SREG;
+    cli();
+    *reg &= ~bit;
+    *out &= ~bit;
+    SREG = oldSREG;
+  } else if (mode == INPUT_PULLUP) {
+ 5c4:	62 30       	cpi	r22, 0x02	; 2
+ 5c6:	51 f4       	brne	.+20     	; 0x5dc <pinMode+0x6a>
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring_digital.c:48
+    uint8_t oldSREG = SREG;
+ 5c8:	9f b7       	in	r25, 0x3f	; 63
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring_digital.c:49
+    cli();
+ 5ca:	f8 94       	cli
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring_digital.c:50
+    *reg &= ~bit;
+ 5cc:	3c 91       	ld	r19, X
+ 5ce:	82 2f       	mov	r24, r18
+ 5d0:	80 95       	com	r24
+ 5d2:	83 23       	and	r24, r19
+ 5d4:	8c 93       	st	X, r24
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring_digital.c:51
+    *out |= bit;
+ 5d6:	e8 81       	ld	r30, Y
+ 5d8:	2e 2b       	or	r18, r30
+ 5da:	ef cf       	rjmp	.-34     	; 0x5ba <pinMode+0x48>
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring_digital.c:54
+    SREG = oldSREG;
+  } else {
+    uint8_t oldSREG = SREG;
+ 5dc:	8f b7       	in	r24, 0x3f	; 63
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring_digital.c:55
+    cli();
+ 5de:	f8 94       	cli
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring_digital.c:56
+    *reg |= bit;
+ 5e0:	ec 91       	ld	r30, X
+ 5e2:	2e 2b       	or	r18, r30
+ 5e4:	2c 93       	st	X, r18
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring_digital.c:57
+    SREG = oldSREG;
+ 5e6:	8f bf       	out	0x3f, r24	; 63
+ 5e8:	ea cf       	rjmp	.-44     	; 0x5be <pinMode+0x4c>
+
+000005ea <digitalWrite>:
+digitalWrite():
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring_digital.c:188
+    #endif
+  }
+}
+
+void digitalWrite(uint8_t pin, uint8_t val)
+{
+ 5ea:	1f 93       	push	r17
+ 5ec:	cf 93       	push	r28
+ 5ee:	df 93       	push	r29
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring_digital.c:189
+  uint8_t timer = digitalPinToTimer(pin);
+ 5f0:	28 2f       	mov	r18, r24
+ 5f2:	30 e0       	ldi	r19, 0x00	; 0
+ 5f4:	f9 01       	movw	r30, r18
+ 5f6:	e8 59       	subi	r30, 0x98	; 152
+ 5f8:	ff 4f       	sbci	r31, 0xFF	; 255
+ 5fa:	84 91       	lpm	r24, Z
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring_digital.c:190
+  uint8_t bit = digitalPinToBitMask(pin);
+ 5fc:	f9 01       	movw	r30, r18
+ 5fe:	e1 58       	subi	r30, 0x81	; 129
+ 600:	ff 4f       	sbci	r31, 0xFF	; 255
+ 602:	d4 91       	lpm	r29, Z
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring_digital.c:191
+  uint8_t port = digitalPinToPort(pin);
+ 604:	f9 01       	movw	r30, r18
+ 606:	ea 56       	subi	r30, 0x6A	; 106
+ 608:	ff 4f       	sbci	r31, 0xFF	; 255
+ 60a:	c4 91       	lpm	r28, Z
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring_digital.c:194
+  volatile uint8_t *out;
+
+  if (port == NOT_A_PIN) return;
+ 60c:	cc 23       	and	r28, r28
+ 60e:	a9 f0       	breq	.+42     	; 0x63a <digitalWrite+0x50>
+ 610:	16 2f       	mov	r17, r22
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring_digital.c:198
+
+  // If the pin that support PWM output, we need to turn it off
+  // before doing a digital write.
+  if (timer != NOT_ON_TIMER) turnOffPWM(timer);
+ 612:	81 11       	cpse	r24, r1
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring_digital.c:198 (discriminator 1)
+ 614:	0e 94 90 02 	call	0x520	; 0x520 <turnOffPWM>
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring_digital.c:200
+
+  out = portOutputRegister(port);
+ 618:	ec 2f       	mov	r30, r28
+ 61a:	f0 e0       	ldi	r31, 0x00	; 0
+ 61c:	ee 0f       	add	r30, r30
+ 61e:	ff 1f       	adc	r31, r31
+ 620:	e9 54       	subi	r30, 0x49	; 73
+ 622:	ff 4f       	sbci	r31, 0xFF	; 255
+ 624:	a5 91       	lpm	r26, Z+
+ 626:	b4 91       	lpm	r27, Z
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring_digital.c:202
+
+  uint8_t oldSREG = SREG;
+ 628:	8f b7       	in	r24, 0x3f	; 63
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring_digital.c:203
+  cli();
+ 62a:	f8 94       	cli
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring_digital.c:206
+
+  if (val == LOW) {
+    *out &= ~bit;
+ 62c:	ec 91       	ld	r30, X
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring_digital.c:205
+  out = portOutputRegister(port);
+
+  uint8_t oldSREG = SREG;
+  cli();
+
+  if (val == LOW) {
+ 62e:	11 11       	cpse	r17, r1
+ 630:	08 c0       	rjmp	.+16     	; 0x642 <digitalWrite+0x58>
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring_digital.c:206
+    *out &= ~bit;
+ 632:	d0 95       	com	r29
+ 634:	de 23       	and	r29, r30
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring_digital.c:208
+  } else {
+    *out |= bit;
+ 636:	dc 93       	st	X, r29
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring_digital.c:211
+  }
+
+  SREG = oldSREG;
+ 638:	8f bf       	out	0x3f, r24	; 63
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring_digital.c:212
+}
+ 63a:	df 91       	pop	r29
+ 63c:	cf 91       	pop	r28
+ 63e:	1f 91       	pop	r17
+ 640:	08 95       	ret
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring_digital.c:208
+  cli();
+
+  if (val == LOW) {
+    *out &= ~bit;
+  } else {
+    *out |= bit;
+ 642:	de 2b       	or	r29, r30
+ 644:	f8 cf       	rjmp	.-16     	; 0x636 <digitalWrite+0x4c>
+
+00000646 <digitalRead>:
+digitalRead():
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring_digital.c:215
+
+  SREG = oldSREG;
+}
+
+int digitalRead(uint8_t pin)
+{
+ 646:	cf 93       	push	r28
+ 648:	df 93       	push	r29
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring_digital.c:216
+  uint8_t timer = digitalPinToTimer(pin);
+ 64a:	28 2f       	mov	r18, r24
+ 64c:	30 e0       	ldi	r19, 0x00	; 0
+ 64e:	f9 01       	movw	r30, r18
+ 650:	e8 59       	subi	r30, 0x98	; 152
+ 652:	ff 4f       	sbci	r31, 0xFF	; 255
+ 654:	84 91       	lpm	r24, Z
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring_digital.c:217
+  uint8_t bit = digitalPinToBitMask(pin);
+ 656:	f9 01       	movw	r30, r18
+ 658:	e1 58       	subi	r30, 0x81	; 129
+ 65a:	ff 4f       	sbci	r31, 0xFF	; 255
+ 65c:	d4 91       	lpm	r29, Z
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring_digital.c:218
+  uint8_t port = digitalPinToPort(pin);
+ 65e:	f9 01       	movw	r30, r18
+ 660:	ea 56       	subi	r30, 0x6A	; 106
+ 662:	ff 4f       	sbci	r31, 0xFF	; 255
+ 664:	c4 91       	lpm	r28, Z
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring_digital.c:220
+
+  if (port == NOT_A_PIN) return LOW;
+ 666:	cc 23       	and	r28, r28
+ 668:	a1 f0       	breq	.+40     	; 0x692 <digitalRead+0x4c>
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring_digital.c:224
+
+  // If the pin that support PWM output, we need to turn it off
+  // before getting a digital reading.
+  if (timer != NOT_ON_TIMER) turnOffPWM(timer);
+ 66a:	81 11       	cpse	r24, r1
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring_digital.c:224 (discriminator 1)
+ 66c:	0e 94 90 02 	call	0x520	; 0x520 <turnOffPWM>
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring_digital.c:226
+
+  if (*portInputRegister(port) & bit) return HIGH;
+ 670:	ec 2f       	mov	r30, r28
+ 672:	f0 e0       	ldi	r31, 0x00	; 0
+ 674:	ee 0f       	add	r30, r30
+ 676:	ff 1f       	adc	r31, r31
+ 678:	e3 55       	subi	r30, 0x53	; 83
+ 67a:	ff 4f       	sbci	r31, 0xFF	; 255
+ 67c:	a5 91       	lpm	r26, Z+
+ 67e:	b4 91       	lpm	r27, Z
+ 680:	ec 91       	ld	r30, X
+ 682:	ed 23       	and	r30, r29
+ 684:	81 e0       	ldi	r24, 0x01	; 1
+ 686:	90 e0       	ldi	r25, 0x00	; 0
+ 688:	09 f4       	brne	.+2      	; 0x68c <digitalRead+0x46>
+ 68a:	80 e0       	ldi	r24, 0x00	; 0
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring_digital.c:228
+  return LOW;
+}
+ 68c:	df 91       	pop	r29
+ 68e:	cf 91       	pop	r28
+ 690:	08 95       	ret
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring_digital.c:220
+{
+  uint8_t timer = digitalPinToTimer(pin);
+  uint8_t bit = digitalPinToBitMask(pin);
+  uint8_t port = digitalPinToPort(pin);
+
+  if (port == NOT_A_PIN) return LOW;
+ 692:	80 e0       	ldi	r24, 0x00	; 0
+ 694:	90 e0       	ldi	r25, 0x00	; 0
+ 696:	fa cf       	rjmp	.-12     	; 0x68c <digitalRead+0x46>
+
+00000698 <initVariant>:
+initVariant():
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/main.cpp:28
+int atexit(void (* /*func*/ )()) { return 0; }
+
+// Weak empty variant initialization function.
+// May be redefined by variant files.
+void initVariant() __attribute__((weak));
+void initVariant() { }
+ 698:	08 95       	ret
+
+0000069a <main>:
+main():
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/main.cpp:35
+//void setupUSB() __attribute__((weak));
+//void setupUSB() { }
+
+int main(void)
+{
+  init();
+ 69a:	0e 94 a6 03 	call	0x74c	; 0x74c <init>
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/main.cpp:37
+
+  initVariant();
+ 69e:	0e 94 4c 03 	call	0x698	; 0x698 <initVariant>
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/main.cpp:43
+
+#if defined(USBCON)
+  USBDevice.attach();
+#endif
+  
+  setup();
+ 6a2:	0e 94 f3 00 	call	0x1e6	; 0x1e6 <setup>
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/main.cpp:47
+    
+  for (;;) {
+    loop();
+    if (serialEventRun) serialEventRun();
+ 6a6:	c0 e0       	ldi	r28, 0x00	; 0
+ 6a8:	d0 e0       	ldi	r29, 0x00	; 0
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/main.cpp:46
+#endif
+  
+  setup();
+    
+  for (;;) {
+    loop();
+ 6aa:	0e 94 29 01 	call	0x252	; 0x252 <loop>
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/main.cpp:47
+    if (serialEventRun) serialEventRun();
+ 6ae:	20 97       	sbiw	r28, 0x00	; 0
+ 6b0:	e1 f3       	breq	.-8      	; 0x6aa <main+0x10>
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/main.cpp:47 (discriminator 1)
+ 6b2:	0e 94 00 00 	call	0	; 0x0 <__vectors>
+ 6b6:	f9 cf       	rjmp	.-14     	; 0x6aa <main+0x10>
+
+000006b8 <__vector_16>:
+__vector_16():
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring.c:939
+    "   brne 1b"                     // 2 cycles
+    : /* no outputs */
+    : "w" (us)
+  );
+  // return = 4 cycles
+}
+ 6b8:	1f 92       	push	r1
+ 6ba:	0f 92       	push	r0
+ 6bc:	0f b6       	in	r0, 0x3f	; 63
+ 6be:	0f 92       	push	r0
+ 6c0:	11 24       	eor	r1, r1
+ 6c2:	2f 93       	push	r18
+ 6c4:	3f 93       	push	r19
+ 6c6:	8f 93       	push	r24
+ 6c8:	9f 93       	push	r25
+ 6ca:	af 93       	push	r26
+ 6cc:	bf 93       	push	r27
+ 6ce:	80 91 34 01 	lds	r24, 0x0134	; 0x800134 <timer0_millis>
+ 6d2:	90 91 35 01 	lds	r25, 0x0135	; 0x800135 <timer0_millis+0x1>
+ 6d6:	a0 91 36 01 	lds	r26, 0x0136	; 0x800136 <timer0_millis+0x2>
+ 6da:	b0 91 37 01 	lds	r27, 0x0137	; 0x800137 <timer0_millis+0x3>
+ 6de:	30 91 33 01 	lds	r19, 0x0133	; 0x800133 <timer0_fract>
+ 6e2:	26 e0       	ldi	r18, 0x06	; 6
+ 6e4:	23 0f       	add	r18, r19
+ 6e6:	2d 37       	cpi	r18, 0x7D	; 125
+ 6e8:	68 f1       	brcs	.+90     	; 0x744 <__vector_16+0x8c>
+ 6ea:	29 e8       	ldi	r18, 0x89	; 137
+ 6ec:	23 0f       	add	r18, r19
+ 6ee:	03 96       	adiw	r24, 0x03	; 3
+ 6f0:	a1 1d       	adc	r26, r1
+ 6f2:	b1 1d       	adc	r27, r1
+ 6f4:	20 93 33 01 	sts	0x0133, r18	; 0x800133 <timer0_fract>
+ 6f8:	80 93 34 01 	sts	0x0134, r24	; 0x800134 <timer0_millis>
+ 6fc:	90 93 35 01 	sts	0x0135, r25	; 0x800135 <timer0_millis+0x1>
+ 700:	a0 93 36 01 	sts	0x0136, r26	; 0x800136 <timer0_millis+0x2>
+ 704:	b0 93 37 01 	sts	0x0137, r27	; 0x800137 <timer0_millis+0x3>
+ 708:	80 91 2f 01 	lds	r24, 0x012F	; 0x80012f <timer0_overflow_count>
+ 70c:	90 91 30 01 	lds	r25, 0x0130	; 0x800130 <timer0_overflow_count+0x1>
+ 710:	a0 91 31 01 	lds	r26, 0x0131	; 0x800131 <timer0_overflow_count+0x2>
+ 714:	b0 91 32 01 	lds	r27, 0x0132	; 0x800132 <timer0_overflow_count+0x3>
+ 718:	01 96       	adiw	r24, 0x01	; 1
+ 71a:	a1 1d       	adc	r26, r1
+ 71c:	b1 1d       	adc	r27, r1
+ 71e:	80 93 2f 01 	sts	0x012F, r24	; 0x80012f <timer0_overflow_count>
+ 722:	90 93 30 01 	sts	0x0130, r25	; 0x800130 <timer0_overflow_count+0x1>
+ 726:	a0 93 31 01 	sts	0x0131, r26	; 0x800131 <timer0_overflow_count+0x2>
+ 72a:	b0 93 32 01 	sts	0x0132, r27	; 0x800132 <timer0_overflow_count+0x3>
+ 72e:	bf 91       	pop	r27
+ 730:	af 91       	pop	r26
+ 732:	9f 91       	pop	r25
+ 734:	8f 91       	pop	r24
+ 736:	3f 91       	pop	r19
+ 738:	2f 91       	pop	r18
+ 73a:	0f 90       	pop	r0
+ 73c:	0f be       	out	0x3f, r0	; 63
+ 73e:	0f 90       	pop	r0
+ 740:	1f 90       	pop	r1
+ 742:	18 95       	reti
+ 744:	02 96       	adiw	r24, 0x02	; 2
+ 746:	a1 1d       	adc	r26, r1
+ 748:	b1 1d       	adc	r27, r1
+ 74a:	d4 cf       	rjmp	.-88     	; 0x6f4 <__vector_16+0x3c>
+
+0000074c <init>:
+init():
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring.c:945
+
+void init()
+{
+  // this needs to be called before setup() or some functions won't
+  // work there
+  sei();
+ 74c:	78 94       	sei
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring.c:957
+
+  // On the ATmega168, timer 0 is also used for fast hardware pwm
+  // (using phase-correct PWM would mean that timer 0 overflowed half as often
+  // resulting in different millis() behavior on the ATmega8 and ATmega168)
+#if defined(TCCR0A) && defined(WGM01)
+  TCCR0A |= _BV(WGM01) | _BV(WGM00);
+ 74e:	84 b5       	in	r24, 0x24	; 36
+ 750:	83 60       	ori	r24, 0x03	; 3
+ 752:	84 bd       	out	0x24, r24	; 36
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring.c:972
+  #if defined(WGM00) && defined(WGM01) // The ATmega8 doesn't have WGM00 and WGM01
+    TCCR0 |= _BV(WGM01) | _BV(WGM00);
+  #endif
+#elif defined(TCCR0B) && defined(CS01) && defined(CS00)
+  // This combination is for the standard 168/328/640/1280/1281/2560/2561
+  TCCR0B |= _BV(CS01) | _BV(CS00);
+ 754:	85 b5       	in	r24, 0x25	; 37
+ 756:	83 60       	ori	r24, 0x03	; 3
+ 758:	85 bd       	out	0x25, r24	; 37
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring.c:984
+
+// Enable timer 0 overflow interrupt
+#if defined(TIMSK) && defined(TOIE0)
+  TIMSK |= _BV(TOIE0);
+#elif defined(TIMSK0) && defined(TOIE0)
+  TIMSK0 |= _BV(TOIE0);
+ 75a:	ee e6       	ldi	r30, 0x6E	; 110
+ 75c:	f0 e0       	ldi	r31, 0x00	; 0
+ 75e:	80 81       	ld	r24, Z
+ 760:	81 60       	ori	r24, 0x01	; 1
+ 762:	80 83       	st	Z, r24
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring.c:995
+// this is better for motors as it ensures an even waveform
+// note, however, that fast pwm mode can achieve a frequency of up
+// 8 MHz (with a 16 MHz clock) at 50% duty cycle
+
+#if defined(TCCR1B) && defined(CS11) && defined(CS10)
+  TCCR1B = _BV(CS11); // Set timer 1 prescale factor to 64
+ 764:	e1 e8       	ldi	r30, 0x81	; 129
+ 766:	f0 e0       	ldi	r31, 0x00	; 0
+ 768:	82 e0       	ldi	r24, 0x02	; 2
+ 76a:	80 83       	st	Z, r24
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring.c:997
+#if F_CPU >= 8000000L
+  TCCR1B |= _BV(CS10);
+ 76c:	80 81       	ld	r24, Z
+ 76e:	81 60       	ori	r24, 0x01	; 1
+ 770:	80 83       	st	Z, r24
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring.c:1006
+#if F_CPU >= 8000000L
+  TCCR1 |= _BV(CS10);
+#endif
+#endif
+#if defined(TCCR1A) && defined(WGM10)
+  TCCR1A |= _BV(WGM10); // Put timer 1 in 8-bit phase correct pwm mode
+ 772:	e0 e8       	ldi	r30, 0x80	; 128
+ 774:	f0 e0       	ldi	r31, 0x00	; 0
+ 776:	80 81       	ld	r24, Z
+ 778:	81 60       	ori	r24, 0x01	; 1
+ 77a:	80 83       	st	Z, r24
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring.c:1013
+
+// Set timer 2 prescale factor to 64
+#if defined(TCCR2) && defined(CS22)
+  TCCR2 |= _BV(CS22);
+#elif defined(TCCR2B) && defined(CS22)
+  TCCR2B |= _BV(CS22);
+ 77c:	e1 eb       	ldi	r30, 0xB1	; 177
+ 77e:	f0 e0       	ldi	r31, 0x00	; 0
+ 780:	80 81       	ld	r24, Z
+ 782:	84 60       	ori	r24, 0x04	; 4
+ 784:	80 83       	st	Z, r24
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring.c:1022
+
+// Configure timer 2 for phase correct pwm (8-bit)
+#if defined(TCCR2) && defined(WGM20)
+  TCCR2 |= _BV(WGM20);
+#elif defined(TCCR2A) && defined(WGM20)
+  TCCR2A |= _BV(WGM20);
+ 786:	e0 eb       	ldi	r30, 0xB0	; 176
+ 788:	f0 e0       	ldi	r31, 0x00	; 0
+ 78a:	80 81       	ld	r24, Z
+ 78c:	81 60       	ori	r24, 0x01	; 1
+ 78e:	80 83       	st	Z, r24
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring.c:1052
+#if defined(ADCSRA)
+  // set a2d prescaler so we are inside the desired 50-200 KHz range.
+  #if F_CPU >= 16000000 // 16 MHz / 128 = 125 KHz
+    ADCSRA = _BV(ADPS2) | _BV(ADPS1) | _BV(ADPS0) | _BV(ADEN);
+  #elif F_CPU >= 8000000 // 8 MHz / 64 = 125 KHz
+    ADCSRA = _BV(ADPS2) | _BV(ADPS1) | _BV(ADEN);
+ 790:	86 e8       	ldi	r24, 0x86	; 134
+ 792:	80 93 7a 00 	sts	0x007A, r24	; 0x80007a <__DATA_REGION_ORIGIN__+0x1a>
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring.c:1070
+  // here so they can be used as normal digital i/o; they will be
+  // reconnected in Serial.begin()
+#if defined(UCSRB)
+  UCSRB = 0;
+#elif defined(UCSR0B)
+  UCSR0B = 0;
+ 796:	10 92 c1 00 	sts	0x00C1, r1	; 0x8000c1 <__DATA_REGION_ORIGIN__+0x61>
+C:\Users\Thomas\Documents\ArduinoData\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring.c:1072
+#endif
+}
+ 79a:	08 95       	ret
+
+0000079c <_exit>:
+exit():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2278
+ 79c:	f8 94       	cli
+
+0000079e <__stop_program>:
+__stop_program():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2280
+ 79e:	ff cf       	rjmp	.-2      	; 0x79e <__stop_program>
