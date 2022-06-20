@@ -1,7 +1,7 @@
 #include <avr/sleep.h>
 #include <Servo.h>
 
-volatile const int wakePin = 2;                 // pin used for waking up
+volatile const int wakePin = 2; // pin used for waking up
 volatile const int LEDPin = 7;
 volatile const int armPin = 9;
 volatile const int lidPin = 10;
@@ -30,10 +30,9 @@ void setup() {
 
   ///// Settings //////
   LA = 0; // Lid offset
-  AA = -9; // Arm offset
+  AA = -13; // Arm offset
   
-  pinMode(wakePin, INPUT_PULLUP);
-  pinMode(LEDPin, OUTPUT);
+  pinMode(wakePin, INPUT_PULLUP); 
   pinMode(mosfetPin, OUTPUT);
 
   /////////////////////////////////
@@ -60,8 +59,7 @@ void setup() {
 
 ///////////////////////////////////////////////////////////////////////////////////
 void loop() {
-  if ((digitalRead(wakePin) == LOW) && (isActive == 1)) {
-    digitalWrite(LEDPin, HIGH);
+  if ((digitalRead(wakePin) == LOW) && (isActive == 1)) { 
     digitalWrite(mosfetPin, LOW);
  
     switch (random(1, 6+1)) {
@@ -107,8 +105,7 @@ void loop() {
 ///////////////////////////////////////////////////////////////////////////////////
 
 void sleepNow()
-{
-  digitalWrite(LEDPin, LOW);
+{ 
   digitalWrite(mosfetPin, HIGH);
 
   sleep_enable();
